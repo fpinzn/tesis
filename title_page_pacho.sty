@@ -1,0 +1,46 @@
+%% This style file was created by Jamie Stevens on 09/05/2005
+%% It allows you to put the UniMelb logo on the top of your title
+%% page, as well as keeping all the rest of the maketitle options intact.
+
+%% You'll need the A3_CMYK.eps file in your thesis directory for this
+%% style to work properly.
+
+%% This style file is called by 
+%%    \usepackage[options]{titlepage_melbourne_uni}
+%% where options can be:
+%%     acidfree = puts ``Produced on acid-free paper'' 
+%%                at the bottom of the page
+
+\ProvidesPackage{title_page_pacho}[2011/05/06]
+\RequirePackage{graphicx}
+\newsavebox{\acidfreepaper}
+\DeclareOption{acidfree}{
+\sbox{\acidfreepaper}{\rmfamily Produced on acid-free paper}
+}
+\DeclareOption*{
+\sbox{\acidfreepaper}{}
+}
+\ProcessOptions
+\renewcommand{\maketitle}{
+\thispagestyle{empty}
+\begin{center}
+%\includegraphics[scale=0.65]{A3_CMYK}\\
+%\vspace{2cm}
+{\sffamily\Huge \@title}\\
+\vspace{2cm}
+{\rmfamily\Large \@author}\\
+\vspace{2cm}
+{\rmfamily{\large Universidad de los Andes}}\\
+{\rmfamily Departamento de Ingenería de Sistemas y Computación}\\
+\vspace{1cm}
+{\rmfamily{\large Ecole Nationale Superieure d'Arts et Métiers. Paris Tech.}}\\
+{\rmfamily Institut Image}\\
+\vspace{2cm}
+{\rmfamily \@date}\\
+\vspace{5cm}
+\usebox{\acidfreepaper}
+{\rmfamily{\scriptsize This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 2.0 France License. To view a copy of this license, visit http://creativecommons.org/licenses/by-nc-sa/2.0/fr/ or send a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.}}
+\end{center}
+\cleardoublepage
+\setcounter{page}{1}
+}

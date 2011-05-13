@@ -2,24 +2,156 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>currentDocument</key>
+	<string>thesis.tex</string>
 	<key>documents</key>
 	<array>
 		<dict>
 			<key>filename</key>
-			<string>../main.tex</string>
+			<string>title_page_pacho.sty</string>
 			<key>lastUsed</key>
-			<date>2011-05-05T18:10:44Z</date>
+			<date>2011-05-10T20:22:32Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>ideas.tex</string>
+			<key>lastUsed</key>
+			<date>2011-05-12T01:48:31Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>thesis.tex</string>
+			<key>lastUsed</key>
+			<date>2011-05-12T01:54:27Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
+		<dict>
+			<key>filename</key>
+			<string>0-brief.tex</string>
+			<key>lastUsed</key>
+			<date>2011-05-10T20:22:33Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>1-introduction.tex</string>
+			<key>lastUsed</key>
+			<date>2011-05-11T00:21:26Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>2-general_description.tex</string>
+			<key>lastUsed</key>
+			<date>2011-05-12T01:45:34Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>2.1-goals.tex</string>
+			<key>lastUsed</key>
+			<date>2011-05-12T01:17:10Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>2.2-prior_work.tex</string>
+			<key>lastUsed</key>
+			<date>2011-05-06T15:37:13Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>2.3-the_problem.tex</string>
+			<key>lastUsed</key>
+			<date>2011-05-12T01:45:41Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>3-design_and_specifications.tex</string>
+			<key>lastUsed</key>
+			<date>2011-05-12T01:45:26Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>3.1-the_problem_definition.tex</string>
+			<key>lastUsed</key>
+			<date>2011-05-12T01:45:29Z</date>
+		</dict>
+		<dict>
+			<key>filename</key>
+			<string>bibliography.bib</string>
+			<key>lastUsed</key>
+			<date>2011-05-12T01:54:27Z</date>
+		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>200</integer>
+	<integer>114</integer>
 	<key>metaData</key>
-	<dict/>
+	<dict>
+		<key>2.3-the_problem.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>34</integer>
+				<key>line</key>
+				<integer>4</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>bibliography.bib</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>ideas.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>12</integer>
+				<key>line</key>
+				<integer>21</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>thesis.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>9</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>openDocuments</key>
+	<array>
+		<string>thesis.tex</string>
+		<string>2.3-the_problem.tex</string>
+		<string>bibliography.bib</string>
+		<string>ideas.tex</string>
+	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{203, 4}, {1070, 774}}</string>
+	<string>{{188, 4}, {1070, 774}}</string>
 </dict>
 </plist>
