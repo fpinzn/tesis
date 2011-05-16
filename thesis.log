@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.10.5)  13 MAY 2011 07:19
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.10.5)  16 MAY 2011 05:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -514,8 +514,7 @@ Non-PDF special ignored!
 Non-PDF special ignored!]) (./2-general_description.tex [4
 Non-PDF special ignored!]
 Chapter 2.
-(./2.1-goals.tex) (./2.2-prior_work.tex) (./2.3-the_problem.tex))
-(./3-design_and_specifications.tex
+(./2.1-goals.tex) (./2.2-prior_work.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5
@@ -523,47 +522,51 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 Non-PDF special ignored!
 Non-PDF special ignored!] [6
+Non-PDF special ignored!]) (./2.3-the_problem.tex [7
+Non-PDF special ignored!
+Non-PDF special ignored!])) (./3-design_and_specifications.tex [8
 Non-PDF special ignored!]
 Chapter 3.
 (./3.1-the_problem_definition.tex) (./3.2-specifications.tex)
-(./3.3-restrictions.tex)) (./4-design-process.tex [7
+(./3.3-restrictions.tex)) (./4-design-process.tex [9
 
 
-Non-PDF special ignored!
-Non-PDF special ignored!] [8
-
-]
-Chapter 4.
-(./4.1-information-retrieval.tex) (./4.2-design-alternatives.tex))
-(./5-implementation.tex [9
 Non-PDF special ignored!
 Non-PDF special ignored!] [10
 
 ]
-Chapter 5.
-(./5.1-implementation-review.tex) (./5.2-expected-results.tex))
-(./6-validation.tex [11
+Chapter 4.
+(./4.1-information-retrieval.tex) (./4.2-design-alternatives.tex))
+(./5-implementation.tex [11
 Non-PDF special ignored!
 Non-PDF special ignored!] [12
 
 ]
-Chapter 6.
-(./6.1-methods.tex) (./6.2-validation-of-results.tex)) (./7-conclusions.tex)
-(./thesis.bbl [13
+Chapter 5.
+(./5.1-implementation-review.tex) (./5.2-expected-results.tex))
+(./6-validation.tex [13
 Non-PDF special ignored!
 Non-PDF special ignored!] [14
 
-]) [15
+]
+Chapter 6.
+(./6.1-methods.tex) (./6.2-validation-of-results.tex)) (./7-conclusions.tex)
+(./thesis.bbl [15
 Non-PDF special ignored!
+Non-PDF special ignored!] [16
+
+] [17
+Non-PDF special ignored!
+Non-PDF special ignored!]) [18
 Non-PDF special ignored!] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 2912 strings out of 493747
- 38141 string characters out of 3143546
- 101899 words of memory out of 3000000
- 6088 multiletter control sequences out of 15000+200000
+ 2917 strings out of 493747
+ 38180 string characters out of 3143546
+ 101914 words of memory out of 3000000
+ 6093 multiletter control sequences out of 15000+200000
  13049 words of font info for 32 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,14n,45p,663b,349s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,14n,45p,907b,433s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2010/texmf-dist/f
 onts/enc/dvips/base/8r.enc}</usr/local/texlive/2010/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/publi
@@ -577,10 +580,10 @@ s/cm/cmssbx10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmssi10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmti12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/urw/avantgar/u
 agd8a.pfb>
-Output written on thesis.pdf (17 pages, 151561 bytes).
+Output written on thesis.pdf (20 pages, 165249 bytes).
 PDF statistics:
- 104 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 114 PDF objects out of 1000 (max. 8388607)
+ 80 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

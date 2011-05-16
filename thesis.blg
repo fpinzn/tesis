@@ -3,44 +3,49 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: thesis.aux
 The style file: acm.bst
 Database file #1: thesis.bib
-You've used 2 entries,
+Too many commas in name 1 of "Bernheim Brush A.J., Bargeron D., Gupta A., Cadiz JJ" for entry Bernheim
+while executing---line 1086 of file acm.bst
+Too many commas in name 1 of "Bernheim Brush A.J., Bargeron D., Gupta A., Cadiz JJ" for entry Bernheim
+while executing---line 1127 of file acm.bst
+You've used 7 entries,
             2253 wiz_defined-function locations,
-            544 strings with 4467 characters,
-and the built_in function-call counts, 1145 in all, are:
-= -- 110
-> -- 59
+            581 strings with 5539 characters,
+and the built_in function-call counts, 3303 in all, are:
+= -- 324
+> -- 129
 < -- 0
-+ -- 24
-- -- 22
-* -- 92
-:= -- 173
-add.period$ -- 6
-call.type$ -- 2
-change.case$ -- 17
++ -- 54
+- -- 46
+* -- 239
+:= -- 474
+add.period$ -- 21
+call.type$ -- 7
+change.case$ -- 44
 chr.to.int$ -- 0
-cite$ -- 2
-duplicate$ -- 48
-empty$ -- 85
-format.name$ -- 22
-if$ -- 248
+cite$ -- 7
+duplicate$ -- 160
+empty$ -- 285
+format.name$ -- 46
+if$ -- 746
 int.to.chr$ -- 0
-int.to.str$ -- 2
-missing$ -- 2
-newline$ -- 13
-num.names$ -- 4
-pop$ -- 19
+int.to.str$ -- 7
+missing$ -- 7
+newline$ -- 38
+num.names$ -- 14
+pop$ -- 57
 preamble$ -- 1
-purify$ -- 15
+purify$ -- 37
 quote$ -- 0
-skip$ -- 38
+skip$ -- 121
 stack$ -- 0
-substring$ -- 74
-swap$ -- 20
+substring$ -- 226
+swap$ -- 62
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 8
+type$ -- 28
 warning$ -- 0
-while$ -- 10
-width$ -- 3
-write$ -- 26
+while$ -- 33
+width$ -- 8
+write$ -- 82
+(There were 2 error messages)
