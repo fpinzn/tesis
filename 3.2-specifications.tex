@@ -2,3 +2,164 @@
 %Establecer requerimientos precisos para el proyecto. Clasificar requerimientos en funcionales (entada / salida) y no funcionales (cualitativos, metodología esperada en la construcción de una solución, desempeño esperado de una solución, …).
 %Discutir la posibilidad de aceptar soluciones aproximadas y niveles de aceptación (v.gr., deseable, aceptable) y justificar cuándo una solución inexacta o incompleta podría desarrollarse.
 \section{Specifications}
+
+\subsection{Functional and Non Functional Requirements}
+
+\begin{center}
+
+\begin{tabular}{p{12.6cm}}
+	\hline
+	{\Large Functional Requirement 1 (FR1)}\\ \hline \hline
+	The user must be able to create annotations associated to the polygons of interest in the model. \\ \hline
+	\large{Input:}\\ \hline
+	The polygons of interest, the content of the annotation, its priority and its author.\\ \hline \hline
+	\large{Output:}\\ \hline
+	The annotation is successfully linked to the model.\\ \hline
+\end{tabular}
+\vspace{10mm}
+
+\begin{tabular}{p{12.6cm}}
+	\hline
+	{\Large Functional Requirement 2 (FR2)}\\ \hline \hline
+	The user must be able to retrieve the annotations made in the model. \\ \hline
+	\large{Input:}\\ \hline
+	None.\\ \hline \hline
+	\large{Output:}\\ \hline
+	The user can see a list of the annotations associated with de model.\\
+	\hline
+\end{tabular}\\
+\vspace{10mm}
+
+\begin{tabular}{p{12.6cm}}
+	\hline
+	{\Large Functional Requirement 3 (FR3)}\\ \hline \hline
+	The user must be able to save the annotations made in the model. \\ \hline
+	\large{Input:}\\ \hline
+	The annotations made by the user.\\ \hline \hline
+	\large{Output:}\\ \hline
+	An archive containing the annotations.\\
+	\hline
+\end{tabular}\\
+\vspace{10mm}
+
+\begin{tabular}{p{12.6cm}}
+	\hline
+	{\Large Functional Requirement 4 (FR4)}\\ \hline \hline
+	The user must be able to load the annotations made in the model from a file. \\ \hline
+	\large{Input:}\\ \hline
+	The archive containing the annotations.\\ \hline \hline
+	\large{Output:}\\ \hline
+	The user is now capable of seeing the annotations previously made.\\
+	\hline
+\end{tabular}\\
+\vspace{10mm}
+
+\begin{tabular}{p{12.6cm}}
+	\hline
+	{\Large Non Functional Requirement 1 (NFR1)}\\ \hline \hline
+	The application must work in the cave-like systems available at the facilities of the Institut Image. \\ \hline
+	\large{Origin:}\\ \hline
+	Context of the development of the project.\\ \hline \hline
+	\large{Level of Impact:}\\ \hline
+	Sets the bases of the architecture of the system.\\
+	\hline
+\end{tabular}\\
+\vspace{10mm}
+
+\begin{tabular}{p{12.6cm}}
+	\hline
+	{\Large Non Functional Requirement 2 (NFR2)}\\ \hline \hline
+	The application work, as well in a standard PC running Windows XP. \\ \hline
+	\large{Origin:}\\ \hline
+	The need to use the system in other locations with different facilities.\\ \hline \hline
+	\large{Level of Impact:}\\ \hline
+	Creates another branch of development inside the project.\\
+	\hline
+\end{tabular}\\
+\vspace{10mm}
+
+\begin{tabular}{p{12.6cm}}
+	\hline
+	{\Large Non Functional Requirement 3 (NFR3)}\\ \hline \hline
+	The part of the application running in the cave servers must be developed using C++ and OpenSceneGraph. \\ \hline
+	\large{Origin:}\\ \hline
+	These default technologies used for high demanding applications and the \emph{de-facto} standard inside the laboratories related to the project.\\ \hline \hline
+	\large{Level of Impact:}\\ \hline
+	Sets the technologies to be used in the development.\\
+	\hline
+\end{tabular}\\
+\vspace{10mm}
+
+\begin{tabular}{p{12.6cm}}
+	\hline
+	{\Large Non Functional Requirement 4 (NFR4)}\\ \hline \hline
+	The part of the application running in the cave servers must run in Windows XP.. \\ \hline
+	\large{Origin:}\\ \hline
+	The OS of the cave is Windows XP.\\ \hline \hline
+	\large{Level of Impact:}\\ \hline
+	Sets the environment of development. Given the use of OpenSceneGraph as the base layer the impact is not as deep as it might have been.\\
+	\hline
+\end{tabular}\\
+\vspace{10mm}
+
+\begin{tabular}{p{12.6cm}}
+	\hline
+	{\Large Non Functional Requirement 5 (NFR5)}\\ \hline \hline
+	The application must save the annotations in XML format. \\ \hline
+	\large{Origin:}\\ \hline
+	Asked by Frédéric, taking in account the advantages of the highly standardized format.\\ \hline \hline
+	\large{Level of Impact:}\\ \hline
+	Creates another module in the software to save and load annotations from an XML file.\\
+	\hline
+\end{tabular}\\
+\vspace{10mm}
+
+\begin{tabular}{p{12.6cm}}
+	\hline
+	{\Large Non Functional Requirement 6 (NFR6)}\\ \hline \hline
+	The application will tour the user through all the annotations made to the model. \\ \hline
+	\large{Origin:}\\ \hline
+	Enhances usability.\\ \hline \hline
+	\large{Level of Impact:}\\ \hline
+	Minimal, given that the user was already able to manually tour model searching the annotations.\\
+	\hline
+\end{tabular}\\
+\vspace{10mm}
+
+\begin{tabular}{p{12.6cm}}
+	\hline
+	{\Large Non Functional Requirement 7 (NFR7)}\\ \hline \hline
+	The application will make use of the VRPN technology to interchange information between devices. \\ \hline
+	\large{Origin:}\\ \hline
+	Enhances the modifiability of the system and is a standard practice in both laboratories.\\ \hline \hline
+	\large{Level of Impact:}\\ \hline
+	Sets architectural constraints.\\
+	\hline
+\end{tabular}\\
+\vspace{10mm}
+
+\begin{tabular}{p{12.6cm}}
+	\hline
+	{\Large Non Functional Requirement 8 (NFR8)}\\ \hline \hline
+	The application will make use of an Android powered tablet as the front-end interaction device. \\ \hline
+	\large{Origin:}\\ \hline
+	Enhances the usability of the system and was proposed by Frédéric.\\ \hline \hline
+	\large{Level of Impact:}\\ \hline
+	Creates a whole new branch of development but reduces it's complexity given the high-level API featured by the Android OS.\\
+	\hline
+\end{tabular}\\
+\vspace{10mm}
+
+\end{center}
+
+\subsection{Acceptance Level}
+
+The minimal accepted solution would be the one who fulfills all the requirements (functional and nonfunctional) mentioned before, except the Non Functional Requirement 2. This is, a solution that runs and is fully functional in cave like systems but doesn't work in a standard PC running windows XP.  
+
+The optimal solution in the available time is then, the one described below through the requirements. The description of better global solutions will be reserved for the \emph{Future Work} part of this document as they involve a significantly major development work, involve an external repository of the annotations and timeline functionalities upon the models and their textual information, that are beyond the reach of this project.
+
+An incomplete solution would be developed in the case that the calendar designed for developing the solution falls short due to unforeseen serious technical difficulties during the implementation. In this disgraceful scenario the part of the project that would suffer the most, is without doubt the related to the reviewing of the annotations. This, because the first part that will be implemented is the one concerned with creating the annotations given it's need to afterwards see the annotations made.
+
+On the other hand, another part of the project that could present non-optimal quality is the one concerned with the user experience. The project is thought to be a clean, minimal but satisfying solution to the problem it aims to solve, nevertheless a huge effort is being invested in improving the user experience and the quality attributes related to it. 
+
+Taking in account the bibliography \textbf{ENCONTRAR BIBLIOGRAFIA QUE APOYE ESTO} on this subject, a nice user experience involves reducing the span of functional requirements to the minimum necessary to successfully solve the problem, while focusing in less evident goods of the software. In the particular case of the project, the rendering power, the net transmission and the responsivity of the front-end (the Android powered tablet) are the most relevant factors in providing a satisfactory user experience. Is yet to be seen how easy or hard is to tune them rightly.

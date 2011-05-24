@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.10.5)  16 MAY 2011 05:18
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.10.5)  24 MAY 2011 18:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -527,63 +527,97 @@ Non-PDF special ignored!
 Non-PDF special ignored!])) (./3-design_and_specifications.tex [8
 Non-PDF special ignored!]
 Chapter 3.
-(./3.1-the_problem_definition.tex) (./3.2-specifications.tex)
-(./3.3-restrictions.tex)) (./4-design-process.tex [9
+(./3.1-the_problem_definition.tex) (./3.2-specifications.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9
 
 
 Non-PDF special ignored!
-Non-PDF special ignored!] [10
+Non-PDF special ignored!]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10
+Non-PDF special ignored!]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12
+Non-PDF special ignored!]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [13
+Non-PDF special ignored!
+Non-PDF special ignored!]) (./3.3-restrictions.tex
+Overfull \hbox (0.33333pt too wide) in paragraph at lines 165--3
+[]\OT1/cmr/m/n/12 Taking in ac-count the bib-li-og-ra-phy \OT1/cmr/bx/n/12 EN-C
+ON-TRAR BIB-LI-OGRAFIA
+ []
+
+
+Underfull \vbox (badness 1668) has occurred while \output is active []
+
+ [14
+Non-PDF special ignored!])) (./4-design-process.tex [15
+Non-PDF special ignored!
+Non-PDF special ignored!] [16
 
 ]
 Chapter 4.
 (./4.1-information-retrieval.tex) (./4.2-design-alternatives.tex))
-(./5-implementation.tex [11
+(./5-implementation.tex [17
 Non-PDF special ignored!
-Non-PDF special ignored!] [12
+Non-PDF special ignored!] [18
 
 ]
 Chapter 5.
 (./5.1-implementation-review.tex) (./5.2-expected-results.tex))
-(./6-validation.tex [13
+(./6-validation.tex [19
 Non-PDF special ignored!
-Non-PDF special ignored!] [14
+Non-PDF special ignored!] [20
 
 ]
 Chapter 6.
 (./6.1-methods.tex) (./6.2-validation-of-results.tex)) (./7-conclusions.tex)
-(./thesis.bbl [15
+(./thesis.bbl [21
 Non-PDF special ignored!
-Non-PDF special ignored!] [16
+Non-PDF special ignored!] [22
 
-] [17
+] [23
 Non-PDF special ignored!
-Non-PDF special ignored!]) [18
+Non-PDF special ignored!]) [24
 Non-PDF special ignored!] (./thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 2917 strings out of 493747
- 38180 string characters out of 3143546
- 101914 words of memory out of 3000000
- 6093 multiletter control sequences out of 15000+200000
- 13049 words of font info for 32 fonts, out of 3000000 for 9000
+ 2944 strings out of 493747
+ 38507 string characters out of 3143546
+ 103914 words of memory out of 3000000
+ 6112 multiletter control sequences out of 15000+200000
+ 16623 words of font info for 45 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,14n,45p,907b,433s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,14n,45p,909b,433s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2010/texmf-dist/f
 onts/enc/dvips/base/8r.enc}</usr/local/texlive/2010/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/publi
 c/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmr12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr17.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr8.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmss10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmss17.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmssbx10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmssi10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmti12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/urw/avantgar/u
-agd8a.pfb>
-Output written on thesis.pdf (20 pages, 165249 bytes).
+c/amsfonts/cm/cmr10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr17.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr7.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr8.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmss10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmss17.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmssbx10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmssi10.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmti12.pfb></usr/local/texlive/2010/texmf-dist/fonts/type1/urw/avantgar/uagd8a
+.pfb>
+Output written on thesis.pdf (26 pages, 201484 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 80 compressed objects within 1 object stream
+ 141 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
