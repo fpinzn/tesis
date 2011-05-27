@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    >
+
+	<android.widget.TextView
+		android:text="Hi there! What is your name?"
+		android:id="@+id/text"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:textSize="25sp" 
+		android:layout_marginBottom="50dip"		
+		/>
+
+
+    <ProgressBar
+		android:id="@+id/progress"
+		android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+		android:visibility	="gone"/>
+         
+ 	<EditText
+	    android:id="@+id/name"
+	    android:layout_height="wrap_content"
+	    android:inputType="textPersonName"
+	    android:layout_width="200sp"
+	    android:maxLines="1"
+	    android:maxLength="20"
+	    android:textSize="20sp"
+	    android:layout_marginBottom="50dip"
+	    android:gravity="center"
+    />
+ 
+	
+	<android.widget.Button
+		android:text="Start"
+		android:id="@+id/button"
+		android:layout_height="wrap_content"
+		android:layout_width="wrap_content"
+		android:textSize="20sp"
+		android:onClick="click"  
+		android:paddingLeft="30sp"
+		android:paddingRight="30sp"
+		
+		/>
+</LinearLayout>

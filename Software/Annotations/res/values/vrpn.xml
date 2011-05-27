@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Vrpn button numbers.
+
+Keep them in a single file for easy reference and matching with your C++ code
+ 
+ -->
+ 
+<resources>
+
+<!-- For SeekBars  -->
+<item type="id" format="integer" name="VrpnAnalogTranslationSpeed" >96</item>
+<item type="id" format="integer" name="VrpnAnalogInterEyeDistance" >97</item>
+
+<!--  For RadioButtons, PressButtons, ToggleButtons -->
+<item type="id" format="integer" name="VrpnButtonRotateLeft" >10</item>
+<item type="id" format="integer" name="VrpnButtonRotateRight" >11</item>
+<item type="id" format="integer" name="VrpnButtonMoveRelativeToRoom" >12</item>
+<item type="id" format="integer" name="VrpnButtonPitchAsForward" >13</item>
+</resources>

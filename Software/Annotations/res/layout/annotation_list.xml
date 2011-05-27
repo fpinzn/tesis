@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/annotation_list"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_height="fill_parent"
+	android:layout_width="fill_parent">
+	<!-- Header -->
+	<LinearLayout android:id="@+id/header"
+		android:layout_height="wrap_content"
+		android:layout_width="fill_parent"
+		>
+		<TextView android:id="@+id/item1"
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:text="Author"
+			android:width="100dip"
+			android:height="60dip"
+			android:textSize="20sp" 
+			android:gravity="center"
+			
+			
+		/>
+		<TextView android:id="@+id/item2"
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:text="Content"
+			android:width="200dip"
+			android:height="60dip"
+			android:textSize="20sp" 
+			android:gravity="center"
+			
+			
+		/>
+		<TextView android:id="@+id/item3"
+			android:layout_height="fill_parent"
+			android:layout_width="wrap_content"
+			android:text="Priority"
+			android:width="100dip"
+			android:height="60dip"
+			android:textSize="20sp" 
+			android:gravity="center"
+			
+			
+		/>
+	</LinearLayout>
+
+	<!-- List Divider -->
+	<View android:layout_width="fill_parent"
+		android:layout_height="1dip"
+		android:background="?android:attr/listDivider" />
+
+	<!-- ListView (grid_items) -->
+	<LinearLayout android:id="@+id/layout"
+		android:layout_width="wrap_content"
+		android:layout_height="fill_parent">
+		<ListView android:id="@+id/listview"
+			android:layout_height="fill_parent"
+			android:layout_width="fill_parent">
+		</ListView>
+	</LinearLayout>
+</LinearLayout>

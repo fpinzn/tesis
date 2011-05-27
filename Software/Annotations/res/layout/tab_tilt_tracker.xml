@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 
+xmlns:app is Required for the custom attributes
+Although the custom attributes are initially defined in eu.ensam.ii.vrpn,
+the build process cannot find them there, but it also defines the attributes in the current package,
+so we use the enclosing package name (eu.ensam.ii.vrpn.clients)
+
+-->
+<eu.ensam.ii.vrpn.clients.VrpnTiltTracker
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/eu.ensam.ii.vrpn.clients"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:orientation="vertical"
+  android:id="@+id/tab_tilt_tracker">
+  
+	<TextView 
+		android:text="Use pitch as .." 
+		android:id="@+id/TextView01" 
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+	>
+	</TextView>
+
+	<RadioGroup 
+		android:id="@+id/RadioGroup01" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:paddingBottom="30dip"
+		android:orientation="horizontal"				
+	>
+	
+		<eu.ensam.ii.vrpn.VrpnRadioButton 
+			android:text="Forward/Backward" 
+			android:id="@+id/btnMoveForward"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content" 		
+			android:layout_weight="1"
+			android:checked="true"
+			app:vrpnButton="@id/VrpnButtonPitchAsForward"	
+		/>
+
+		<RadioButton
+			android:text="Up/Down" 
+			android:id="@+id/btnMoveUp" 
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:checked="false"
+			>
+		</RadioButton>
+	</RadioGroup>
+
+	<TextView 
+		android:text="Use Roll as .." 
+		android:id="@+id/TextView01" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:paddingTop="30dip"
+	>
+	</TextView>
+
+	
+	<TextView android:text="Move relative to .."
+		android:id="@+id/TextView01"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:paddingTop="30dip"
+		>
+	</TextView>
+
+	<RadioGroup
+		android:id="@+id/LinearLayout01"
+		android:orientation="horizontal"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:paddingBottom="30dip"		
+	>
+		<eu.ensam.ii.vrpn.VrpnRadioButton 
+			android:text="Room" 
+			android:id="@+id/Button02"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:checked="false"
+			app:vrpnButton="@id/VrpnButtonMoveRelativeToRoom"
+			/>
+
+		<RadioButton
+			android:text="Head"
+			android:id="@+id/Button01"
+			android:layout_width="fill_parent" 
+			android:layout_height="wrap_content"
+			android:layout_weight="1"
+			android:checked="true"
+			>
+		</RadioButton>
+	</RadioGroup>	
+	
+	
+	<LinearLayout 
+	android:id="@+id/LinearLayout01"
+	android:orientation="horizontal"
+	android:layout_width="fill_parent" 
+	android:layout_height="wrap_content"
+	>
+	<eu.ensam.ii.vrpn.VrpnPressButton 
+		android:id="@+id/Button02"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:drawableTop="@drawable/ic_menu_rotate_left"
+		android:textOn=""
+		android:textOff=""
+		app:vrpnButton="@id/VrpnButtonRotateLeft"
+	/>
+
+	<eu.ensam.ii.vrpn.VrpnPressButton
+		android:id="@+id/Button01"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_weight="1"
+		android:drawableTop="@drawable/ic_menu_rotate_right"
+		android:textOn=""
+		android:textOff=""
+		app:vrpnButton="@id/VrpnButtonRotateRight"						
+		/>
+
+</LinearLayout>
+	
+	
+	<ToggleButton 
+		android:layout_width="fill_parent" 
+		android:text="@+id/ToggleButton01" 
+		android:layout_height="fill_parent" 
+		android:id="@+id/btnEnableTilt"
+		android:layout_gravity="bottom"
+		android:textOn="Tracker on"
+		android:textOff="Tracker off"
+	>
+	</ToggleButton>
+
+</eu.ensam.ii.vrpn.clients.VrpnTiltTracker>

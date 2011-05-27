@@ -1,0 +1,389 @@
+package eu.ensam.ii.vrpn;
+
+import java.io.IOException;
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+import java.net.InetAddress;
+import java.net.SocketException;
+import java.net.UnknownHostException;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
+import android.net.Uri;
+import android.util.Log;
+import android.widget.Toast;
+
+/**
+ * The Vrpn client.
+ * 
+ * This class sends updates to Vrpn devices (trackers, buttons and analogs).
+ * 
+ * Due to 
+ * 
+ * 
+ */
+public class VrpnClient implements SensorEventListener {
+
+	private static VrpnClient _instance;
+	
+	private static String LOG_TAG = "VrpnApplication";
+    private SensorManager _sensorManager;
+    
+    private boolean _isTiltTrackerEnabled = false;
+    
+    //private int _acceleratorSequence = 0;	/** */
+    private int _tiltTrackerSequenceNumber = 0;
+    
+	private float[] sensorValues = null;
+	
+    private float[] _accelerometerValues = new float[9];
+    private boolean _isAccelerometerValid = false;
+    
+    private float[] _magneticFieldValues = new float[9];
+    private boolean _isMagneticFieldValid = false;
+	float _values[] = new float[3];
+	float _inRotationMatrix[] = new float[9];
+	float _outRotationMatrix[] = new float[9];
+	
+
+    //private InetAddress _address;
+    //private int _serverPort;
+	
+	/*
+	 *  Create the objects once to avoid repeated allocations in frequently called functions.
+	 *  As long as the VrpnClient methods that update the object are called from the same thread, 
+	 *  no problem.  This is currently the case, since the sensor updates are call on the main 
+	 *  and the other updates are called from UI widgets callbacks, also on the main UI thread..
+	 *  
+	 */
+    private DatagramSocket _socket;
+    private DatagramPacket _packet;
+	JSONArray _jsonArray = new JSONArray();
+	private JSONObject _sensorJsonObject = new JSONObject();
+	private JSONObject _buttonJsonObject = new JSONObject();
+	private JSONObject _analogJsonObject = new JSONObject();
+    
+	/*
+	 * These Ids must match those declared in vrpn_Tracker_Android.cpp
+	 */
+	private static final String MSG_KEY_TYPE = 				"type";
+	private static final String MSG_KEY_SEQUENCE_NUMBER =	"sn";
+	private static final String MSG_KEY_TIMESTAMP =			"ts";
+	private static final String MSG_KEY_TRACKER_ID =		"tid";
+	
+	private static final String MSG_KEY_SENSOR_ID = 		"id";
+	//private static final String MSG_KEY_SENSOR_TYPE = "st";
+	private static final String MSG_KEY_SENSOR_DATA = 		"data";
+	private static final int 	MSG_SENSOR_ID_TILT = 		0;
+	
+	private static final String MSG_KEY_BUTTON_ID = 		"button";
+	private static final String MSG_KEY_BUTTON_STATUS = 	"state";
+	
+	private static final String MSG_KEY_ANALOG_CHANNEL = 	"num";
+	private static final String MSG_KEY_ANALOG_DATA = 		"data";
+
+	private final int MSG_TYPE_TRACKER = 1;
+	private final int MSG_TYPE_BUTTON = 2;
+	private final int MSG_TYPE_ANALOG = 3;
+
+	
+	public void sendButton(int buttonId, boolean buttonState ) {
+		sendTrackerButton(-1, buttonId, buttonState);
+	}
+
+	
+	/**
+	 * Send an update to a Vrpn Button.
+	 * 
+	 * @param[in] trackerId The id of the tracker that owns the button. If trackerId is 0, 
+	 * the button is not associate to a tracker and buttonId is the actual vrpn button number.
+	 * if trackerId is not 0 Otherwise, the 
+	 * @param[in] buttonId the button number.
+	 * Invalid button numbers are ignored on this side, may trigger a message 
+	 * on the Vrpn server 
+	 * @param[in] status the status of the button that will be sent on the channel
+	 */
+	public void sendTrackerButton(int trackerId, int buttonId, boolean buttonState) {
+		try {
+			_buttonJsonObject.put(MSG_KEY_TRACKER_ID, trackerId);
+			_buttonJsonObject.put(MSG_KEY_TYPE, MSG_TYPE_BUTTON);
+			_buttonJsonObject.put(MSG_KEY_BUTTON_ID, buttonId);
+			_buttonJsonObject.put(MSG_KEY_BUTTON_STATUS, buttonState);
+			// TODO sequance + timestamp
+		} catch (JSONException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		_sendObject(_buttonJsonObject);
+	}
+
+	
+	/**
+	 * Send an update to a Vrpn Analog channel.
+	 *
+	 * Invalid channel numbers are ignored on this side but, they may trigger a message 
+	 * on the Vrpn server 
+	 * 
+	 * @param[in] i the channel number.
+	 * @param[in] data the data that will be sent on the channel
+	 */
+	public void sendAnalog(int channelId, double channelValue) {
+		try {
+			_analogJsonObject.put(MSG_KEY_TYPE, MSG_TYPE_ANALOG);
+			_analogJsonObject.put(MSG_KEY_ANALOG_CHANNEL, channelId);
+			_analogJsonObject.put(MSG_KEY_ANALOG_DATA, channelValue);
+			// TODO sequance + timestamp
+		} catch (JSONException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		_sendObject(_analogJsonObject);
+	}
+
+	/**
+	 * Send an update to a Vrpn Analog channel.
+	 *
+	 * Invalid channel numbers are ignored on this side but, they may trigger a message 
+	 * on the Vrpn server 
+	 * 
+	 * @param[in] i the channel number.
+	 * @param[in] data the data that will be sent on the channel
+	 * 
+	 * 
+	 */
+	/*
+	// TODO remove this method
+	public void sendTrackerAnalog(int trackerId, int channelId, double channelValue) {
+		try {
+			_analogJsonObject.put(MSG_KEY_TRACKER_ID, trackerId);
+			_analogJsonObject.put(MSG_KEY_TYPE, MSG_TYPE_ANALOG);
+			_analogJsonObject.put(MSG_KEY_ANALOG_CHANNEL, channelId);
+			_analogJsonObject.put(MSG_KEY_ANALOG_DATA, channelValue);
+			// TODO sequance + timestamp
+		} catch (JSONException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		_sendObject(_analogJsonObject);
+	}
+	*/
+	/**
+	 * 
+	 */
+	public void enableTiltTracker(boolean enable) {
+		_isTiltTrackerEnabled = enable;
+		enableOrDisableSensors();
+	}
+	
+	
+	/**************************************************************************
+	 * 
+	 *			Create / Destroy
+	 * 
+	 **************************************************************************/
+    
+	public static VrpnClient getInstance() {
+		if (_instance == null) {
+			_instance = new VrpnClient();
+		}
+		return _instance;
+	}
+
+    private VrpnClient() {
+		
+    	
+        try {
+			_socket = new DatagramSocket();
+		} catch (SocketException e) {
+			// TODO Auto-generated catch block
+			// Check this device IP network configuration
+			e.printStackTrace();
+		}
+		
+        // Avoid numerous object creation/destuction in onSensorChanged() 
+		byte dummy[] = {0};
+		_packet = new DatagramPacket(dummy, dummy.length);
+		
+		// Set the address with anything since _sendObject will be called before setUri has been called
+		try {
+    		_packet.setAddress(InetAddress.getLocalHost());
+		} catch (UnknownHostException e) {
+		}
+    }
+    
+    public void setUri(Context context, Uri uri) {
+    	if (uri == null) {
+    		String vrpnUri = context.getResources().getString(eu.ensam.ii.vrpn.R.string.DefaultVrpnUri);
+    		uri = Uri.parse(vrpnUri);
+    		//return;
+    	}
+    	String host = uri.getHost();
+    	try {
+    		_packet.setAddress(InetAddress.getByName(host));
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			Toast t = Toast.makeText(context, "Unknown host : " + host, Toast.LENGTH_LONG);
+			t.show();
+		}
+		_packet.setPort(uri.getPort());
+    }
+	
+
+	/**************************************************************************
+	 * 
+	 *			Sensorlistener implementation
+	 * 
+	 **************************************************************************/
+	/**
+	 * Called when a sensor accuracy changes.
+	 * 
+	 * Currently not used
+	 */
+	@Override
+	public void onAccuracyChanged(Sensor sensor, int accuracy) {
+	}
+
+
+	/**
+	 * Called when a sensor data changes.
+	 * 
+	 * 
+	 * This method packages the sensor data into a JSON object then send the JSON object
+	 * onto an UDP socket. The target socket endpoint configuration is recorded
+	 * in  SensorCasterPreferences.    
+	 */
+	@Override
+	public void onSensorChanged(SensorEvent event) {
+		final int sensorType = event.sensor.getType();
+		double x = 0, y = 0, z = 0;
+		sensorValues = event.values;
+
+		// retrieve and update the adequate sequence number.
+		int sequenceNumber = 0;
+		switch(sensorType) {
+		case Sensor.TYPE_ACCELEROMETER:
+			//sequenceNumber = _acceleratorSequence++;
+			_accelerometerValues = sensorValues;
+			_isAccelerometerValid = true;
+			// Vertical up in Opengl coordinate attached to the device
+			// old version
+			x = event.values[0];
+			y = event.values[2];
+			z = -event.values[1];
+			break;
+		default:
+			break;
+		}
+		if (_isTiltTrackerEnabled) {
+			buildTiltTrackerObject(x, y, z, event.timestamp);
+		}
+	
+		// Add other trackers here
+		
+		
+		// Send the data onto the network
+		Log.d(LOG_TAG, _sensorJsonObject.toString());
+		_sendObject(_sensorJsonObject);
+	}
+
+	/*
+	 * Send the string representation of a Json Object.
+	 * 
+	 * @param[in] o the json object to send
+	 */
+	private void _sendObject(final JSONObject o) {
+		// Send the data onto the network
+		_packet.setData(o.toString().getBytes());
+		try {
+			_socket.send(_packet);
+		} catch (SocketException e) {
+			// Local network not ready, no route to host, ...
+			;
+		}
+		catch (IOException e) {
+			// TODO Auto-generated catch block : send a notification ?
+			e.printStackTrace();
+		}
+	}
+
+	
+	/****************************************************************************
+	 * Class specific
+	 ****************************************************************************/
+	/**
+	 * Build a tilt tracker JSON object
+	 * 
+	 * This method updates the _sensorJsonObject object  
+	 */
+	private void buildTiltTrackerObject(double x, double y, double z, long timestamp) {
+		// TODO refaire le controle des longueurs ne rien faire si la longueur est insuffisante
+		double rX = 0, rZ = 0;		// rX = pitch, rZ = roll
+		// Projection on XY vertical plane to get roll
+		final double lXY = Math.sqrt(x*x + y*y);
+		final double MIN_LENGTH_TO_BE_VALID = 0.2;
+		if (lXY > MIN_LENGTH_TO_BE_VALID) {
+			rZ = Math.toDegrees(Math.atan2(x, y));
+		}
+
+		// projection on YZ plane to get pitch
+		final double lYZ = Math.sqrt(y*y + z*z);
+		if (lYZ > MIN_LENGTH_TO_BE_VALID) {
+			rX = -Math.toDegrees(Math.atan2(z, y));
+		}
+		
+		_values[0] = (float)rX;
+		_values[1] = 0.0f;
+		_values[2] = (float)rZ;
+		
+		// package the sensor event data into a json object
+		try {
+			_sensorJsonObject.put(MSG_KEY_TYPE, MSG_TYPE_TRACKER);
+			_sensorJsonObject.put(MSG_KEY_SEQUENCE_NUMBER, _tiltTrackerSequenceNumber++);
+			_sensorJsonObject.put(MSG_KEY_TIMESTAMP, timestamp);
+			// TODO extend to other sensor Ids 
+			_sensorJsonObject.put(MSG_KEY_SENSOR_ID, MSG_SENSOR_ID_TILT);
+
+			int i = 0;
+			int j;
+			for (j = 0; j < _values.length; j++){
+				_jsonArray.put(i++, _values[j]);
+			}
+			for (; j < _jsonArray.length(); j++){
+				_jsonArray.put(i++, null);
+			}
+			_sensorJsonObject.put(MSG_KEY_SENSOR_DATA, _jsonArray);
+		} catch (JSONException e2) {
+			// TODO Auto-generated catch block
+			e2.printStackTrace();
+		}
+	}
+	
+	private void enableOrDisableSensors() {
+		if (_isTiltTrackerEnabled) {
+	        _sensorManager.registerListener(this, 
+	        		_sensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER), 
+	        		SensorManager.SENSOR_DELAY_GAME);
+		}  else {
+			_sensorManager.unregisterListener(this);
+			// Send an update with horizontal position
+			buildTiltTrackerObject(0, 1, 0, System.nanoTime());
+			_sendObject(_sensorJsonObject);
+		}
+	}
+	
+    /**
+     * Load the target server address and port from the shared preferences
+     */
+	void init(Context context) {
+        _sensorManager = (SensorManager)context.getSystemService(Context.SENSOR_SERVICE);
+        enableOrDisableSensors();
+    }
+}

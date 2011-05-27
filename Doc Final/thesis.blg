@@ -1,0 +1,65 @@
+This is BibTeX, Version 0.99d (TeX Live 2010)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: thesis.aux
+The style file: acm.bst
+Database file #1: thesis.bib
+Warning--entry type for "apple" isn't style-file defined
+--line 29 of file thesis.bib
+Too many commas in name 1 of "Bernheim Brush A.J., Bargeron D., Gupta A., Cadiz JJ" for entry Bernheim
+while executing---line 1086 of file acm.bst
+Too many commas in name 1 of "Russell M. Taylor II, Thomas C. Hudson, Adam Seeger, Hans Weber, Jeffrey Juliano, Aron T. Helser" for entry vrpn
+while executing---line 1086 of file acm.bst
+Too many commas in name 1 of "Russell M. Taylor II, Thomas C. Hudson, Adam Seeger, Hans Weber, Jeffrey Juliano, Aron T. Helser" for entry vrpn
+while executing---line 1086 of file acm.bst
+Too many commas in name 1 of "Russell M. Taylor II, Thomas C. Hudson, Adam Seeger, Hans Weber, Jeffrey Juliano, Aron T. Helser" for entry vrpn
+while executing---line 1086 of file acm.bst
+Too many commas in name 1 of "Bernheim Brush A.J., Bargeron D., Gupta A., Cadiz JJ" for entry Bernheim
+while executing---line 1127 of file acm.bst
+Too many commas in name 1 of "Russell M. Taylor II, Thomas C. Hudson, Adam Seeger, Hans Weber, Jeffrey Juliano, Aron T. Helser" for entry vrpn
+while executing---line 1127 of file acm.bst
+Too many commas in name 1 of "Russell M. Taylor II, Thomas C. Hudson, Adam Seeger, Hans Weber, Jeffrey Juliano, Aron T. Helser" for entry vrpn
+while executing---line 1127 of file acm.bst
+Too many commas in name 1 of "Russell M. Taylor II, Thomas C. Hudson, Adam Seeger, Hans Weber, Jeffrey Juliano, Aron T. Helser" for entry vrpn
+while executing---line 1127 of file acm.bst
+You've used 12 entries,
+            2253 wiz_defined-function locations,
+            604 strings with 6296 characters,
+and the built_in function-call counts, 4801 in all, are:
+= -- 462
+> -- 194
+< -- 0
++ -- 81
+- -- 68
+* -- 331
+:= -- 713
+add.period$ -- 35
+call.type$ -- 12
+change.case$ -- 68
+chr.to.int$ -- 0
+cite$ -- 12
+duplicate$ -- 229
+empty$ -- 418
+format.name$ -- 68
+if$ -- 1068
+int.to.chr$ -- 0
+int.to.str$ -- 12
+missing$ -- 13
+newline$ -- 62
+num.names$ -- 24
+pop$ -- 95
+preamble$ -- 1
+purify$ -- 58
+quote$ -- 0
+skip$ -- 170
+stack$ -- 0
+substring$ -- 291
+swap$ -- 82
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 44
+warning$ -- 0
+while$ -- 46
+width$ -- 14
+write$ -- 130
+(There were 8 error messages)
