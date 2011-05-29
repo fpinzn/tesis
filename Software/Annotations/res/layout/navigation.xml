@@ -1,10 +1,19 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:orientation="vertical" android:layout_width="fill_parent"
 	android:layout_height="fill_parent"
 	android:id="@+id/navigation">
+	
+	<eu.ensam.pacho.Android.Widgets.ImageViewStream.ImageViewStream android:id="@+id/render"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_gravity="top"
+		android:width="600px"
+		android:height="850px"
+		android:src="@drawable/bg"
+		/>
 
 	 <TableLayout android:layout_width="wrap_content"
-		android:layout_height="wrap_content" android:layout_gravity="bottom"
+		android:layout_height="wrap_content" android:layout_gravity="top"
 		android:layout_marginTop="10dip">
 		<TableRow>
 			<TextView android:text="X" android:layout_width="50dip"
@@ -40,14 +49,62 @@
 				android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
 		</TableRow>
 	</TableLayout>
-
+	
+	<EditText
+		android:id="@+id/annotation"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:inputType="textMultiLine"
+		android:lines="5"
+		android:textSize="15dip"
+		android:width="550px"
+		android:maxLength="280"
+		android:layout_gravity="top|center"
+		android:layout_marginTop="150dip"
+		android:visibility="gone"
+		android:imeOptions="actionDone"
+		
+	/>
+	 <LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_gravity="bottom|center"
+		android:orientation="horizontal">
+		
+		
+		<Button
+			android:id="@+id/btncontinue"
+			android:text="Annotate"
+			 android:layout_gravity="left"
+			 android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20dip"
+			android:paddingLeft="30sp"
+			android:paddingRight="30sp"
+			android:onClick="click"
+			android:visibility="gone"  
+		/>	
+		<Button
+			android:id="@+id/btncancel"
+			android:text="Cancel"
+			 android:layout_gravity="right"
+			 android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20dip"
+			android:paddingLeft="30sp"
+			android:paddingRight="30sp"
+			android:onClick="click"  
+			android:visibility="gone"  
+			
+		/>
+		
+		</LinearLayout>
 
 	
-		<com.MobileAnarchy.Android.Widgets.Joystick.DualJoystickView
+		<eu.ensam.pacho.Android.Widgets.Joystick.DualJoystickView
 		android:id="@+id/dualjoystickView"
 		 android:layout_gravity="bottom"
-		android:layout_marginTop="325dip" android:layout_width="fill_parent"
-		android:layout_height="175dip"/>
+		android:layout_width="fill_parent"
+		android:layout_height="200dip"/>
 
 
-</LinearLayout>
+</FrameLayout>

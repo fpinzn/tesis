@@ -5,8 +5,10 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.widget.TabHost;
+import android.widget.Toast;
 import eu.ensam.ii.vrpn.VrpnClient;
 import eu.ensam.ii.vrpn.clients.R;
 
@@ -38,7 +40,7 @@ public class MainActivity extends TabActivity {
          */
         // http://www.codeproject.com/KB/android/AndroidTabs.aspx
         // http://stackoverflow.com/questions/2732682/simple-example-of-merge-and-include-usage-in-android-xml-layouts
-        spec =  getTabHost().newTabSpec("H");
+        spec =  getTabHost().newTabSpec("Navigation");
 		spec.setIndicator("Navigation", getResources().getDrawable(R.drawable.ic_menu_manage));
 		// use the id of the top level view of the tab view layout
 		spec.setContent(new Intent(this,Navigation.class));
@@ -46,7 +48,7 @@ public class MainActivity extends TabActivity {
 		//spec.setContent(R.id.navigation);
         tabHost.addTab(spec); 
         
-        spec =  getTabHost().newTabSpec("H");
+        spec =  getTabHost().newTabSpec("Annotations");
 		spec.setIndicator("Annotations", getResources().getDrawable(R.drawable.ic_lock_silent_mode_vibrate));
 		spec.setContent(new Intent(this,AnnotationList.class));
         tabHost.addTab(spec);        
@@ -54,14 +56,28 @@ public class MainActivity extends TabActivity {
         
     }
 
+
     @Override
     protected void onDestroy() {
     	super.onDestroy();
-    	
     	/*
     	 * By default, the sensor listeners remain active, event after the activity is 
     	 * stopped --> stop the sensor listener
     	 */
     	VrpnClient.getInstance().enableTiltTracker(false);
     }
+
+    public void setTab(int tabCode,int command){
+    	getTabHost().setCurrentTab(tabCode);
+    	
+    	if(command==1 && tabCode==0){
+    		//Create new annotation.
+    		Context context = getApplicationContext();
+    		CharSequence text = "Navigate to the desired position and take a photo tapping the screen.";
+    		int duration = Toast.LENGTH_LONG;
+    		Toast toast = Toast.makeText(context, text, duration);
+    		toast.show();
+    	}
+    }
+
 }

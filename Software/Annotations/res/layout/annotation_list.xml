@@ -8,40 +8,31 @@
 	<LinearLayout android:id="@+id/header"
 		android:layout_height="wrap_content"
 		android:layout_width="fill_parent"
+		android:onClick="click"
 		>
+		<TextView android:id="@+id/annotation_id"
+			android:text="new_annotation"
+        	android:layout_height="wrap_content"
+        	android:layout_width="wrap_content"
+        	android:visibility="gone"
+        />
+		
 		<TextView android:id="@+id/item1"
 			android:layout_height="fill_parent"
 			android:layout_width="wrap_content"
-			android:text="Author"
-			android:width="100dip"
-			android:height="60dip"
-			android:textSize="20sp" 
-			android:gravity="center"
-			
-			
+			android:width="50dip"
+			android:height="50dip"
+			android:textSize="20sp" 			
 		/>
 		<TextView android:id="@+id/item2"
 			android:layout_height="fill_parent"
 			android:layout_width="wrap_content"
-			android:text="Content"
-			android:width="200dip"
-			android:height="60dip"
+			android:text="Create new annotation"
+			android:width="350dip"
+			android:height="50dip"
 			android:textSize="20sp" 
-			android:gravity="center"
-			
-			
-		/>
-		<TextView android:id="@+id/item3"
-			android:layout_height="fill_parent"
-			android:layout_width="wrap_content"
-			android:text="Priority"
-			android:width="100dip"
-			android:height="60dip"
-			android:textSize="20sp" 
-			android:gravity="center"
-			
-			
-		/>
+			android:gravity="center_vertical"/>
+
 	</LinearLayout>
 
 	<!-- List Divider -->
