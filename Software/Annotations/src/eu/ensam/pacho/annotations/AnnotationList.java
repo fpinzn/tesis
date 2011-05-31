@@ -25,8 +25,8 @@ public class AnnotationList extends Activity {
         ListView lv= (ListView)findViewById(R.id.listview);
 
         // create the grid item mapping
-        String[] from = new String[] {"Author", "Content","Priority","Id"};
-        int[] to = new int[] {R.id.annotation_author, R.id.annotation_content, R.id.annotation_priority,R.id.annotation_id};
+        String[] from = new String[] {"Author", "Content","Priority","Id","Date"};
+        int[] to = new int[] {R.id.annotation_author, R.id.annotation_content, R.id.annotation_priority,R.id.annotation_id,R.id.annotation_date};
 
         // prepare the list of all records
         List<HashMap<String, String>> fillMaps = new ArrayList<HashMap<String, String>>();
@@ -37,6 +37,7 @@ public class AnnotationList extends Activity {
         	map.put(from[2], "" + (i%3));
         	fillMaps.add(map);
         	map.put(from[3], "" + i);
+        	map.put(from[4], "200"+i+"/"+i+"/"+i);
         }
 
         // fill in the grid_item layout

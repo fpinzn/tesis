@@ -1,12 +1,14 @@
 package eu.ensam.pacho.annotations;
 
+import java.util.Date;
+
 public class Annotation {
 	
 	private String author;
 	private String content;
 	private int priority;
 	private int id;
-	
+	private Date date;
 	public Annotation(String author, String content, int priority, int id) {
 		super();
 		this.author = author;

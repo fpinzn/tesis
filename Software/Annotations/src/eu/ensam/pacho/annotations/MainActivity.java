@@ -18,7 +18,11 @@ public class MainActivity extends TabActivity {
     public void onCreate(Bundle savedInstanceState) {
     	
     	super.onCreate(savedInstanceState);    
-    	
+    	Resources r = getResources();
+
+    	getIntent().putExtra(VrpnClient.EXTRA_VRPN_SERVER, r.getString(R.string.VrpnServer));    	
+    	getIntent().putExtra(VrpnClient.EXTRA_VRPN_PORT, r.getInteger(R.integer.VrpnServerPort));
+
     	/*
     	 * The folowing line is required
     	 */

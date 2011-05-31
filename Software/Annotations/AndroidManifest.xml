@@ -33,24 +33,6 @@
 	    android:screenOrientation="portrait">
     </activity>
 
-    <!-- <activity android:name="IiMoove" 
-		android:exported="true" 
-	    android:configChanges="orientation" 
-	    android:screenOrientation="portrait">
-    </activity>
-
-	<activity android:name="eu.ensam.pacho.annotations.DualJoystickActivity" 
-		android:screenOrientation="portrait">
-			<intent-filter>
-    			<action android:name="eu.ensam.ii.vrpn.STARTUI"></action>
-				<category android:name="android.intent.category.DEFAULT"></category>
-			</intent-filter>
-
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN"></action>
-				<category android:name="android.intent.category.LAUNCHER"></category>
-			</intent-filter>
-	</activity>-->
 
 
 

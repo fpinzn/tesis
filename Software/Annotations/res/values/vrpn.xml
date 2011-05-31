@@ -7,14 +7,18 @@ Keep them in a single file for easy reference and matching with your C++ code
  -->
  
 <resources>
+<!-- VRPN Client -->
+<item type="string" format="string" name="VrpnServer">192.168.2.4</item>
+<item type="integer" format="integer" name="VrpnServerPort">8888</item>
 
-<!-- For SeekBars  -->
-<item type="id" format="integer" name="VrpnAnalogTranslationSpeed" >96</item>
-<item type="id" format="integer" name="VrpnAnalogInterEyeDistance" >97</item>
+<!-- Navigation Screen  -->
+<item type="id" format="integer" name="VrpnTapScreen" >297</item>
+<item type="id" format="integer" name="VrpnRotationJoystick" >298</item>
+<item type="id" format="integer" name="VrpnDirectionJoystick" >299</item>
 
-<!--  For RadioButtons, PressButtons, ToggleButtons -->
-<item type="id" format="integer" name="VrpnButtonRotateLeft" >10</item>
-<item type="id" format="integer" name="VrpnButtonRotateRight" >11</item>
-<item type="id" format="integer" name="VrpnButtonMoveRelativeToRoom" >12</item>
-<item type="id" format="integer" name="VrpnButtonPitchAsForward" >13</item>
+<!-- Annotation Screen -->
+<item type="id" format="integer" name="VrpnGoToAnnotation" >380</item>
+<item type="id" format="integer" name="VrpnRemoveAnnotation" >381</item>
+<item type="id" format="integer" name="VrpnNewAnnotation" >381</item>
+
 </resources>

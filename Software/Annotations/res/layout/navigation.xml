@@ -89,10 +89,10 @@
 
 	
 		<eu.ensam.pacho.Android.Widgets.DualJoystickView
-		android:id="@+id/dualjoystickView"
-		 android:layout_gravity="bottom"
-		android:layout_width="fill_parent"
-		android:layout_height="200dip"/>
+			android:id="@+id/dualjoystickView"
+			android:layout_gravity="bottom"
+			android:layout_width="fill_parent"
+			android:layout_height="175dip"/>
 
 
 </FrameLayout>

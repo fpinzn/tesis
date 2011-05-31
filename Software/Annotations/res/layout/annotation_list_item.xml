@@ -27,8 +27,19 @@
 	        android:gravity="top|left"
 	        android:textSize="20sp" 
 	        android:height="25dip"
-	        android:width="350dip"
+	        android:width="300dip"
 	        android:layout_toRightOf="@id/annotation_priority"
+	        
+	    />
+	            
+        <TextView android:id="@+id/annotation_date"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:gravity="center_vertical"
+	        android:textSize="10sp" 
+	        android:height="25dip"
+	        android:width="50dip"
+	        android:layout_toRightOf="@id/annotation_author"
 	        
 	    />
 

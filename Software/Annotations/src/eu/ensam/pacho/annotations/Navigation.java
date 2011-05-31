@@ -2,7 +2,6 @@ package eu.ensam.pacho.annotations;
 
 
 import eu.ensam.ii.vrpn.clients.R;
-import eu.ensam.pacho.Android.Widgets.AnnotationDialog;
 import eu.ensam.pacho.Android.Widgets.DualJoystickView;
 import eu.ensam.pacho.Android.Widgets.ImageViewStream;
 import eu.ensam.pacho.Android.Widgets.Joystick3DMovedListener;
