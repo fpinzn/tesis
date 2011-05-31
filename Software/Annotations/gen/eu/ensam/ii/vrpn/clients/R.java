@@ -8,6 +8,9 @@
 package eu.ensam.ii.vrpn.clients;
 
 public final class R {
+    public static final class array {
+        public static final int priorities=0x7f050000;
+    }
     public static final class attr {
         /** <p>Must be a floating point value, such as "<code>1.2</code>".
 <p>This may also be a reference to a resource (in the form
@@ -143,115 +146,119 @@ containing a value of this type.
         public static final int icon=0x7f02000d;
     }
     public static final class id {
-        public static final int AccAccuracy=0x7f050024;
-        public static final int AccL=0x7f050028;
-        public static final int AccLn=0x7f05002d;
-        public static final int AccX=0x7f050025;
-        public static final int AccXn=0x7f05002a;
-        public static final int AccY=0x7f050026;
-        public static final int AccYn=0x7f05002b;
-        public static final int AccZ=0x7f050027;
-        public static final int AccZn=0x7f05002c;
-        public static final int BtnSave=0x7f050021;
-        public static final int Button01=0x7f05004f;
-        public static final int Button02=0x7f05004e;
-        public static final int DebugSensors=0x7f050020;
-        public static final int GyrAccuracy=0x7f050037;
-        public static final int GyrX=0x7f050038;
-        public static final int GyrY=0x7f050039;
-        public static final int GyrZ=0x7f05003a;
-        public static final int Inclination=0x7f050045;
-        public static final int LinearLayout01=0x7f05004d;
-        public static final int MagAccuracy=0x7f05002e;
-        public static final int MagL=0x7f050032;
-        public static final int MagLn=0x7f050036;
-        public static final int MagX=0x7f05002f;
-        public static final int MagXn=0x7f050033;
-        public static final int MagY=0x7f050030;
-        public static final int MagYn=0x7f050034;
-        public static final int MagZ=0x7f050031;
-        public static final int MagZn=0x7f050035;
-        public static final int OriRX=0x7f05003f;
-        public static final int OriRY=0x7f050040;
-        public static final int OriRZ=0x7f050041;
-        public static final int OriX=0x7f05003c;
-        public static final int OriY=0x7f05003d;
-        public static final int OriZ=0x7f05003e;
-        public static final int RadioGroup01=0x7f05004a;
-        public static final int RotX=0x7f050042;
-        public static final int RotY=0x7f050043;
-        public static final int RotZ=0x7f050044;
-        public static final int SeekBar01=0x7f050047;
-        public static final int SeekBar02=0x7f050048;
-        public static final int TableRow01=0x7f050022;
-        public static final int TextView01=0x7f050023;
-        public static final int TextViewX1=0x7f050016;
-        public static final int TextViewX2=0x7f050017;
-        public static final int TextViewY1=0x7f050018;
-        public static final int TextViewY2=0x7f050019;
-        public static final int TextViewZ1=0x7f05001a;
-        public static final int TextViewZ2=0x7f05001b;
-        public static final int ToggleButton01=0x7f050050;
-        public static final int VrpnAnalogInterEyeDistance=0x7f050001;
+        public static final int AccAccuracy=0x7f060026;
+        public static final int AccL=0x7f06002a;
+        public static final int AccLn=0x7f06002f;
+        public static final int AccX=0x7f060027;
+        public static final int AccXn=0x7f06002c;
+        public static final int AccY=0x7f060028;
+        public static final int AccYn=0x7f06002d;
+        public static final int AccZ=0x7f060029;
+        public static final int AccZn=0x7f06002e;
+        public static final int BtnSave=0x7f060023;
+        public static final int Button01=0x7f060051;
+        public static final int Button02=0x7f060050;
+        public static final int DebugSensors=0x7f060022;
+        public static final int GyrAccuracy=0x7f060039;
+        public static final int GyrX=0x7f06003a;
+        public static final int GyrY=0x7f06003b;
+        public static final int GyrZ=0x7f06003c;
+        public static final int Inclination=0x7f060047;
+        public static final int LinearLayout01=0x7f06004f;
+        public static final int MagAccuracy=0x7f060030;
+        public static final int MagL=0x7f060034;
+        public static final int MagLn=0x7f060038;
+        public static final int MagX=0x7f060031;
+        public static final int MagXn=0x7f060035;
+        public static final int MagY=0x7f060032;
+        public static final int MagYn=0x7f060036;
+        public static final int MagZ=0x7f060033;
+        public static final int MagZn=0x7f060037;
+        public static final int OriRX=0x7f060041;
+        public static final int OriRY=0x7f060042;
+        public static final int OriRZ=0x7f060043;
+        public static final int OriX=0x7f06003e;
+        public static final int OriY=0x7f06003f;
+        public static final int OriZ=0x7f060040;
+        public static final int RadioGroup01=0x7f06004c;
+        public static final int RotX=0x7f060044;
+        public static final int RotY=0x7f060045;
+        public static final int RotZ=0x7f060046;
+        public static final int SeekBar01=0x7f060049;
+        public static final int SeekBar02=0x7f06004a;
+        public static final int TableRow01=0x7f060024;
+        public static final int TextView01=0x7f060025;
+        public static final int TextViewX1=0x7f060019;
+        public static final int TextViewX2=0x7f06001a;
+        public static final int TextViewY1=0x7f06001b;
+        public static final int TextViewY2=0x7f06001c;
+        public static final int TextViewZ1=0x7f06001d;
+        public static final int TextViewZ2=0x7f06001e;
+        public static final int ToggleButton01=0x7f060052;
+        public static final int VrpnAnalogInterEyeDistance=0x7f060001;
         /**  For SeekBars  
          */
-        public static final int VrpnAnalogTranslationSpeed=0x7f050000;
-        public static final int VrpnButtonMoveRelativeToRoom=0x7f050004;
-        public static final int VrpnButtonPitchAsForward=0x7f050005;
+        public static final int VrpnAnalogTranslationSpeed=0x7f060000;
+        public static final int VrpnButtonMoveRelativeToRoom=0x7f060004;
+        public static final int VrpnButtonPitchAsForward=0x7f060005;
         /**   For RadioButtons, PressButtons, ToggleButtons 
          */
-        public static final int VrpnButtonRotateLeft=0x7f050002;
-        public static final int VrpnButtonRotateRight=0x7f050003;
-        public static final int annotation=0x7f05001c;
-        public static final int annotation_author=0x7f05000e;
-        public static final int annotation_content=0x7f05000f;
-        public static final int annotation_id=0x7f050008;
-        public static final int annotation_list=0x7f050006;
-        public static final int annotation_priority=0x7f05000d;
-        public static final int btnEnableTilt=0x7f050051;
-        public static final int btnMoveForward=0x7f05004b;
-        public static final int btnMoveUp=0x7f05004c;
-        public static final int btncancel=0x7f05001e;
-        public static final int btncontinue=0x7f05001d;
-        public static final int button=0x7f050013;
-        public static final int dualjoystickView=0x7f05001f;
-        public static final int header=0x7f050007;
-        public static final int item1=0x7f050009;
-        public static final int item2=0x7f05000a;
-        public static final int layout=0x7f05000b;
-        public static final int listview=0x7f05000c;
-        public static final int lytSeekBarValues=0x7f050054;
-        public static final int name=0x7f050012;
-        public static final int navigation=0x7f050014;
-        public static final int progress=0x7f050011;
-        public static final int render=0x7f050015;
-        public static final int seekBarWidget=0x7f050058;
-        public static final int tab_parameters=0x7f050046;
-        public static final int tab_tilt_tracker=0x7f050049;
-        public static final int text=0x7f050010;
-        public static final int txtSeekBarCurrentValue=0x7f050056;
-        public static final int txtSeekBarMaxValue=0x7f050057;
-        public static final int txtSeekBarMinValue=0x7f050055;
-        public static final int txtSeekBarTitle=0x7f050053;
-        public static final int vrpn_seekbar=0x7f050052;
-        public static final int xx=0x7f050029;
-        public static final int xxx=0x7f05003b;
+        public static final int VrpnButtonRotateLeft=0x7f060002;
+        public static final int VrpnButtonRotateRight=0x7f060003;
+        public static final int annotation_author=0x7f060013;
+        public static final int annotation_content=0x7f060008;
+        public static final int annotation_dialog=0x7f060006;
+        public static final int annotation_id=0x7f06000d;
+        public static final int annotation_list=0x7f06000b;
+        public static final int annotation_priority=0x7f060012;
+        public static final int btnEnableTilt=0x7f060053;
+        public static final int btnMoveForward=0x7f06004d;
+        public static final int btnMoveUp=0x7f06004e;
+        public static final int btnSendAnnotation=0x7f06000a;
+        public static final int btncancel=0x7f060020;
+        public static final int btncontinue=0x7f06001f;
+        public static final int button=0x7f060016;
+        public static final int dualjoystickView=0x7f060021;
+        public static final int header=0x7f06000c;
+        public static final int item1=0x7f06000e;
+        public static final int item2=0x7f06000f;
+        public static final int layout=0x7f060010;
+        public static final int listview=0x7f060011;
+        public static final int lytSeekBarValues=0x7f060056;
+        public static final int name=0x7f060015;
+        public static final int navigation=0x7f060017;
+        public static final int progress=0x7f060014;
+        public static final int render=0x7f060018;
+        public static final int seekBarWidget=0x7f06005a;
+        public static final int spinner=0x7f060009;
+        public static final int tab_parameters=0x7f060048;
+        public static final int tab_tilt_tracker=0x7f06004b;
+        public static final int text=0x7f060007;
+        public static final int txtSeekBarCurrentValue=0x7f060058;
+        public static final int txtSeekBarMaxValue=0x7f060059;
+        public static final int txtSeekBarMinValue=0x7f060057;
+        public static final int txtSeekBarTitle=0x7f060055;
+        public static final int vrpn_seekbar=0x7f060054;
+        public static final int xx=0x7f06002b;
+        public static final int xxx=0x7f06003d;
     }
     public static final class layout {
-        public static final int annotation_list=0x7f030000;
-        public static final int annotation_list_item=0x7f030001;
-        public static final int login=0x7f030002;
-        public static final int main=0x7f030003;
-        public static final int navigation=0x7f030004;
-        public static final int tab_debug_sensors=0x7f030005;
-        public static final int tab_parameters=0x7f030006;
-        public static final int tab_tilt_tracker=0x7f030007;
-        public static final int vrpn_seekbar=0x7f030008;
+        public static final int annotation_dialog=0x7f030000;
+        public static final int annotation_list=0x7f030001;
+        public static final int annotation_list_item=0x7f030002;
+        public static final int login=0x7f030003;
+        public static final int main=0x7f030004;
+        public static final int navigation=0x7f030005;
+        public static final int tab_debug_sensors=0x7f030006;
+        public static final int tab_parameters=0x7f030007;
+        public static final int tab_tilt_tracker=0x7f030008;
+        public static final int vrpn_seekbar=0x7f030009;
     }
     public static final class string {
         public static final int DefaultIntentString=0x7f040002;
         public static final int app_name=0x7f040001;
         public static final int hello=0x7f040000;
+        public static final int priorities_prompt=0x7f040003;
     }
     public static final class styleable {
         /** Attributes that can be used with a VrpnPressButton.

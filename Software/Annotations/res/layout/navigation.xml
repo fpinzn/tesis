@@ -3,7 +3,7 @@
 	android:layout_height="fill_parent"
 	android:id="@+id/navigation">
 	
-	<eu.ensam.pacho.Android.Widgets.ImageViewStream.ImageViewStream android:id="@+id/render"
+	<eu.ensam.pacho.Android.Widgets.ImageViewStream android:id="@+id/render"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content" 
 		android:layout_gravity="top"
@@ -50,21 +50,9 @@
 		</TableRow>
 	</TableLayout>
 	
-	<EditText
-		android:id="@+id/annotation"
-		android:layout_width="wrap_content"
-		android:layout_height="wrap_content" 
-		android:inputType="textMultiLine"
-		android:lines="5"
-		android:textSize="15dip"
-		android:width="550px"
-		android:maxLength="280"
-		android:layout_gravity="top|center"
-		android:layout_marginTop="150dip"
-		android:visibility="gone"
-		android:imeOptions="actionDone"
-		
-	/>
+	
+	
+	
 	 <LinearLayout android:layout_width="wrap_content"
 		android:layout_height="wrap_content" 
 		android:layout_gravity="bottom|center"
@@ -100,7 +88,7 @@
 		</LinearLayout>
 
 	
-		<eu.ensam.pacho.Android.Widgets.Joystick.DualJoystickView
+		<eu.ensam.pacho.Android.Widgets.DualJoystickView
 		android:id="@+id/dualjoystickView"
 		 android:layout_gravity="bottom"
 		android:layout_width="fill_parent"

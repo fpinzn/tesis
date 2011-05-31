@@ -2,17 +2,25 @@ package eu.ensam.pacho.annotations;
 
 
 import eu.ensam.ii.vrpn.clients.R;
-import eu.ensam.pacho.Android.Widgets.ImageViewStream.ImageViewStream;
-import eu.ensam.pacho.Android.Widgets.Joystick.DualJoystickView;
-import eu.ensam.pacho.Android.Widgets.Joystick.Joystick3DMovedListener;
+import eu.ensam.pacho.Android.Widgets.AnnotationDialog;
+import eu.ensam.pacho.Android.Widgets.DualJoystickView;
+import eu.ensam.pacho.Android.Widgets.ImageViewStream;
+import eu.ensam.pacho.Android.Widgets.Joystick3DMovedListener;
 
 import android.app.Activity;
+import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
+import android.text.Editable;
+import android.util.Log;
 import android.view.View;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -22,11 +30,14 @@ public class Navigation extends Activity{
 	private DualJoystickView joystick;
 	private ImageViewStream render;
 	private Button btncontinue,btncancel;
-	private EditText annotation;
+//	private LinearLayout annotation;
+//	private EditText annotation_content;
 	private static Navigation instance;
 	private Toast toast;
 	//0=navigating 1=selecting pols 2=introducing annotation
 	private int state;
+	
+	ProgressDialog savingAnnotationDialog;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		
@@ -50,7 +61,8 @@ public class Navigation extends Activity{
         render=(ImageViewStream)findViewById(R.id.render);
         btncontinue=(Button)findViewById(R.id.btncontinue);
         btncancel=(Button)findViewById(R.id.btncancel);
-        annotation=(EditText)findViewById(R.id.annotation);
+       // annotation=(LinearLayout)findViewById(R.id.annotation);
+       // annotation_content=(EditText)findViewById(R.id.annotation_content);
 	}
 
     private Joystick3DMovedListener _listenerLeft = new Joystick3DMovedListener() {
@@ -130,40 +142,41 @@ public class Navigation extends Activity{
 		
 		else if(state==2){
 			if(id==R.id.btncontinue){		
-				//TODO:Sent annotation via VRPN
 				navigation();
 			}
 			
 			else if(id==R.id.btncancel){
-				selectingPolygons();
+				selectPolygons();
 			}
 		}
 	}
 	
+	protected Dialog onCreateDialog(int id){
+		if(id==0){
+			//Annotation Dialog
+			AnnotationDialog dialog = new AnnotationDialog(this,this);
+			return dialog;
+		}
+		return null;
+		
+	}
+	
 	private void annotate() {
+			
 		state=2;
-		annotation.setVisibility(View.VISIBLE);
+		showDialog(0);
+		/*annotation.setVisibility(View.VISIBLE);
 		btncontinue.setText("Finish");
 		joystick.setVisibility(View.GONE);
 		btncancel.setVisibility(View.VISIBLE);
 		btncontinue.setVisibility(View.VISIBLE);
-		render.setSelectingPolygons(false);
+		render.setSelectingPolygons(false);*/
 		toast.cancel();
 
 
 	}
 
-	private void selectingPolygons() {
-		state=1;
-		joystick.setVisibility(View.GONE);
-		btncancel.setVisibility(View.VISIBLE);
-		btncontinue.setVisibility(View.VISIBLE);
-		annotation.setVisibility(View.GONE);
-		render.setSelectingPolygons(true);
-		btncontinue.setText("Annotate");
 
-
-	}
 
 	public void navigation(){
 		state=0;
@@ -171,13 +184,26 @@ public class Navigation extends Activity{
 		btncancel.setVisibility(View.GONE);
 		btncontinue.setVisibility(View.GONE);
 		btncontinue.setText("Annotate");
-		annotation.setVisibility(View.GONE);
-		annotation.setText("");
+//		annotation.setVisibility(View.GONE);
+//		annotation_content.setText("");
 		toast.cancel();
 		render.setSelectingPolygons(false);
 
 	}
 	public final static Navigation getInstance(){
 		return instance;
+	}
+
+
+
+	public void sendAnnotation(Editable text, String priority) {
+		Log.d("New Annotation",text+". "+priority);
+		savingAnnotationDialog = ProgressDialog.show(Navigation.this, "", 
+                "Saving Annotation...", true);
+		
+		//TODO:Save Annotation
+		savingAnnotationDialog.hide();
+		navigation();
+
 	}
 }
