@@ -1,5 +1,7 @@
 package eu.ensam.pacho.annotations;
 
+import java.util.ArrayList;
+
 import android.app.TabActivity;
 import android.content.Context;
 import android.content.Intent;
@@ -13,7 +15,13 @@ import eu.ensam.ii.vrpn.VrpnClient;
 import eu.ensam.ii.vrpn.clients.R;
 
 public class MainActivity extends TabActivity {
-
+	public Navigation navigation;
+	public AnnotationList annotationList;
+	/*Annotations made in the navigation tab before visiting for the first time
+	 * the annotations' screen need to be stored here.
+	 * */
+	public ArrayList<Annotation> preAnnotations;
+	public String author;
     @Override
     public void onCreate(Bundle savedInstanceState) {
     	
@@ -23,6 +31,8 @@ public class MainActivity extends TabActivity {
     	getIntent().putExtra(VrpnClient.EXTRA_VRPN_SERVER, r.getString(R.string.VrpnServer));    	
     	getIntent().putExtra(VrpnClient.EXTRA_VRPN_PORT, r.getInteger(R.integer.VrpnServerPort));
 
+    	Bundle bundle = getIntent().getExtras();
+		author= bundle.getString("Author");
     	/*
     	 * The folowing line is required
     	 */
@@ -58,6 +68,8 @@ public class MainActivity extends TabActivity {
         tabHost.addTab(spec);        
         tabHost.setCurrentTab(0);
         
+        
+        preAnnotations=new ArrayList<Annotation>();
     }
 
 

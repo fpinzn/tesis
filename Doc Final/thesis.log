@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.10.5)  30 MAY 2011 10:35
+This is pdfTeX, Version 3.1415926-1.40.11 (TeX Live 2010) (format=pdflatex 2010.10.5)  10 JUN 2011 16:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -397,47 +397,84 @@ Package: titlesec 2007/08/12 v2.8 Sectioning titles
 (./title_page_pacho.sty
 Package: title_page_pacho 2011/05/06
 \acidfreepaper=\box33
-) (./thesis.aux)
-\openout1 = `thesis.aux'.
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen121
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2010/01/12 v0.4j Insert pages of external PDF documents (AM)
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count101
+\calc@Bcount=\count102
+\calc@Adimen=\dimen122
+\calc@Bdimen=\dimen123
+\calc@Askip=\skip57
+\calc@Bskip=\skip58
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count103
+\calc@Cskip=\skip59
+)
+(/usr/local/texlive/2010/texmf-dist/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2010/06/08 v2.0b eso-pic (RN)
 
-(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
-\scratchdimen=\dimen121
-\scratchbox=\box34
-\nofMPsegments=\count102
-\nofMParguments=\count103
-\everyMPshowfont=\toks27
-\MPscratchCnt=\count104
-\MPscratchDim=\dimen122
-\MPnumerator=\count105
-\everyMPtoPDFconversion=\toks28
-) (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
-
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2010/03/25 v1.12 At begin shipout hook (HO)
 
 (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/infwarerr.sty
 Package: infwarerr 2010/04/08 v1.3 Providing info/warning/message (HO)
 )
+(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2010/texmf-dist/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2010/01/12 v0.4j Pdfpages driver for pdfTeX (AM)
+)
+\AM@pagebox=\box34
+\AM@toc@title=\toks27
+\c@AM@survey=\count104
+\AM@templatesizebox=\box35
+)
+(./thesis.aux)
+\openout1 = `thesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 17.
+LaTeX Font Info:    ... okay on input line 17.
+
+(/usr/local/texlive/2010/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count105
+\scratchdimen=\dimen124
+\scratchbox=\box36
+\nofMPsegments=\count106
+\nofMParguments=\count107
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count108
+\MPscratchDim=\dimen125
+\MPnumerator=\count109
+\everyMPtoPDFconversion=\toks29
+) (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2010/04/01 v0.9 Utility functions of pdfTeX for LuaTeX (HO)
+
+
 (/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ifluatex.sty
 Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
 Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/local/texlive/2010/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2010/04/26 v1.7 LaTeX kernel commands for general use (HO)
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -471,6 +508,8 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+\AtBeginShipoutBox=\box37
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [1
@@ -486,7 +525,14 @@ Package Fancyhdr Warning: \headheight is too small (12.0pt):
  This may cause the page layout to be inconsistent, however.
 
 [2
-Non-PDF special ignored!] (./0-brief.tex [1
+Non-PDF special ignored!] (./0-brief.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[1
 
 
 Non-PDF special ignored!
@@ -494,14 +540,14 @@ Non-PDF special ignored!] [2
 
 ]
 Chapter 0.
-LaTeX Font Info:    Try loading font information for T1+pag on input line 10.
+LaTeX Font Info:    Try loading font information for T1+pag on input line 6.
 (/usr/local/texlive/2010/texmf-dist/tex/latex/psnfss/t1pag.fd
 File: t1pag.fd 2001/06/04 font definitions for T1/pag.
 )
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <24.88> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 10.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 6.
 LaTeX Font Info:    Font shape `T1/pag/b/n' in size <100> not available
-(Font)              Font shape `T1/pag/db/n' tried instead on input line 10.
+(Font)              Font shape `T1/pag/db/n' tried instead on input line 6.
 )
 (./1-introduction.tex [3
 Non-PDF special ignored!
@@ -514,7 +560,14 @@ Underfull \vbox (badness 4024) has occurred while \output is active []
 
  [5
 Non-PDF special ignored!
-Non-PDF special ignored!]) (./2-general_description.tex [6
+Non-PDF special ignored!]) (./2-general_description.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[6
 Non-PDF special ignored!]
 Chapter 2.
 (./2.1-goals.tex) (./2.2-prior_work.tex
@@ -524,7 +577,14 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Non-PDF special ignored!
-Non-PDF special ignored!] [8
+Non-PDF special ignored!]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[8
 Non-PDF special ignored!]
 
 LaTeX Warning: Citation `3DUI' on page 9 undefined on input line 15.
@@ -535,9 +595,23 @@ LaTeX Warning: Citation `Tsang' on page 9 undefined on input line 15.
 ) (./2.3-the_problem.tex
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[9
 Non-PDF special ignored!
-Non-PDF special ignored!])) (./3-design_and_specifications.tex [10
+Non-PDF special ignored!])) (./3-design_and_specifications.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[10
 Non-PDF special ignored!]
 Chapter 3.
 (./3.1-the_problem_definition.tex) (./3.2-specifications.tex
@@ -550,26 +624,68 @@ Non-PDF special ignored!
 Non-PDF special ignored!]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [12
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[12
 Non-PDF special ignored!]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [13
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[13
 Non-PDF special ignored!
 Non-PDF special ignored!]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[14
 Non-PDF special ignored!]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [15
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[15
 Non-PDF special ignored!
 Non-PDF special ignored!]) (./3.3-restrictions.tex
 Underfull \vbox (badness 1668) has occurred while \output is active []
 
- [16
-Non-PDF special ignored!])) (./4-design-process.tex [17
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[16
+Non-PDF special ignored!])) (./4-design-process.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[17
 Non-PDF special ignored!
 Non-PDF special ignored!] [18
 
@@ -584,46 +700,197 @@ Non-PDF special ignored!]
 <Images/architecture.png, id=81, 282.05376pt x 245.91875pt>
 File: Images/architecture.png Graphic file (type png)
 
-<use Images/architecture.png> [20
-Non-PDF special ignored! <./Images/architecture.png>])) (./5-implementation.tex
+<use Images/architecture.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[20
+Non-PDF special ignored! <./Images/architecture.png>]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[21
+Non-PDF special ignored!
+Non-PDF special ignored!]
+Underfull \hbox (badness 10000) in paragraph at lines 29--40
+
+ []
+
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [21
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[22
+Non-PDF special ignored!]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 52.
+
+(/usr/local/texlive/2010/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 52.
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[23
 Non-PDF special ignored!
-Non-PDF special ignored!] [22
+Non-PDF special ignored!]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[24
+Non-PDF special ignored!]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[25
+Non-PDF special ignored!
+Non-PDF special ignored!])) (./5-implementation.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[26
 Non-PDF special ignored!]
 Chapter 5.
-(./5.1-implementation-review.tex) (./5.2-expected-results.tex))
-(./6-validation.tex [23
+(./5.1-implementation-review.tex [27
 
 
 Non-PDF special ignored!
-Non-PDF special ignored!] [24
+Non-PDF special ignored!]
+<Images/first_calendar.png, id=110, 640.3925pt x 571.13374pt>
+File: Images/first_calendar.png Graphic file (type png)
 
-]
+<use Images/first_calendar.png>
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[28
+Non-PDF special ignored! <./Images/first_calendar.png (PNG copy)>]
+Underfull \hbox (badness 10000) in paragraph at lines 23--30
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--36
+
+ []
+
+
+Overfull \hbox (16.49394pt too wide) in paragraph at lines 39--40
+\OT1/cmr/m/n/12 project mod-eled some of the de-ci-sions toked. The se-lec-tion
+ of ofx3DModelLoader
+ []
+
+<Images/prototype1_normal.png, id=114, 1030.85126pt x 779.91376pt>
+File: Images/prototype1_normal.png Graphic file (type png)
+
+<use Images/prototype1_normal.png>
+<Images/prototype1_picking.png, id=115, 1026.83624pt x 782.925pt>
+File: Images/prototype1_picking.png Graphic file (type png)
+
+<use Images/prototype1_picking.png>
+Overfull \hbox (0.60365pt too wide) in paragraph at lines 41--43
+[][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[29
+Non-PDF special ignored!
+Non-PDF special ignored!]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[30
+Non-PDF special ignored! <./Images/prototype1_normal.png (PNG copy)> <./Images/
+prototype1_picking.png (PNG copy)>]) (./5.2-expected-results.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[31
+Non-PDF special ignored!
+Non-PDF special ignored!])) (./6-validation.tex
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[32
+Non-PDF special ignored!]
 Chapter 6.
 (./6.1-methods.tex) (./6.2-validation-of-results.tex)) (./7-conclusions.tex)
-(./thesis.bbl [25
-Non-PDF special ignored!
-Non-PDF special ignored!] [26
+(./thesis.bbl [33
 
-] [27
+
 Non-PDF special ignored!
-Non-PDF special ignored!]) [28
+Non-PDF special ignored!] [34
+
+] [35
+Non-PDF special ignored!
+Non-PDF special ignored!])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.49998pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[36
 Non-PDF special ignored!] (./thesis.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2962 strings out of 493747
- 38788 string characters out of 3143546
- 103945 words of memory out of 3000000
- 6127 multiletter control sequences out of 15000+200000
+ 3762 strings out of 493747
+ 51903 string characters out of 3143546
+ 124095 words of memory out of 3000000
+ 6895 multiletter control sequences out of 15000+200000
  16623 words of font info for 45 fonts, out of 3000000 for 9000
  714 hyphenation exceptions out of 8191
- 38i,14n,45p,1004b,435s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,14n,45p,1200b,461s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2010/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/te
 xlive/2010/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/te
@@ -636,12 +903,13 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2010/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmss17.pfb></usr/local/texlive/2010/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texlive/2010/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texlive/2010/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2010/tex
-mf-dist/fonts/type1/urw/avantgar/uagd8a.pfb>
-Output written on thesis.pdf (30 pages, 218408 bytes).
+xmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2010/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2010/texm
+f-dist/fonts/type1/urw/avantgar/uagd8a.pfb>
+Output written on thesis.pdf (38 pages, 594320 bytes).
 PDF statistics:
- 157 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
+ 192 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -8,7 +8,7 @@ Keep them in a single file for easy reference and matching with your C++ code
  
 <resources>
 <!-- VRPN Client -->
-<item type="string" format="string" name="VrpnServer">192.168.2.4</item>
+<item type="string" format="string" name="VrpnServer">192.168.2.2</item>
 <item type="integer" format="integer" name="VrpnServerPort">8888</item>
 
 <!-- Navigation Screen  -->
@@ -17,8 +17,16 @@ Keep them in a single file for easy reference and matching with your C++ code
 <item type="id" format="integer" name="VrpnDirectionJoystick" >299</item>
 
 <!-- Annotation Screen -->
-<item type="id" format="integer" name="VrpnGoToAnnotation" >380</item>
-<item type="id" format="integer" name="VrpnRemoveAnnotation" >381</item>
-<item type="id" format="integer" name="VrpnNewAnnotation" >381</item>
+<item type="id" format="integer" name="VrpnGoToAnnotation" >399</item>
+<item type="id" format="integer" name="VrpnRemoveAnnotation" >398</item>
+<item type="id" format="integer" name="VrpnNewAnnotation" >397</item>
 
+
+<!-- ImageViewStream -->
+<item type="integer" format="integer" name="ImageViewStreamPort">7777</item>
+
+<!-- XML Server -->
+<item type="string" format="string" name="XMLServer">192.168.2.2</item>
+<item type="integer" format="integer" name="XMLServerPort">9999</item>
 </resources>
+

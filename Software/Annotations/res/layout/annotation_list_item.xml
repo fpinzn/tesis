@@ -4,6 +4,7 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"  
     android:onClick="click"
+    android:longClickable="true"
     android:focusable="true"
     >
 	   	<TextView android:id="@+id/annotation_id"
@@ -27,7 +28,7 @@
 	        android:gravity="top|left"
 	        android:textSize="20sp" 
 	        android:height="25dip"
-	        android:width="300dip"
+	        android:width="290dip"
 	        android:layout_toRightOf="@id/annotation_priority"
 	        
 	    />
@@ -38,7 +39,7 @@
 	        android:gravity="center_vertical"
 	        android:textSize="10sp" 
 	        android:height="25dip"
-	        android:width="50dip"
+	        android:width="60dip"
 	        android:layout_toRightOf="@id/annotation_author"
 	        
 	    />

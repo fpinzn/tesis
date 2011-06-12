@@ -1,6 +1,11 @@
 package eu.ensam.pacho.annotations;
 
 
+import java.text.DateFormat;
+import java.util.Calendar;
+import java.util.Date;
+
+import eu.ensam.ii.vrpn.VrpnClient;
 import eu.ensam.ii.vrpn.clients.R;
 import eu.ensam.pacho.Android.Widgets.DualJoystickView;
 import eu.ensam.pacho.Android.Widgets.ImageViewStream;
@@ -11,6 +16,7 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.text.Editable;
 import android.util.Log;
@@ -35,13 +41,16 @@ public class Navigation extends Activity{
 	private Toast toast;
 	//0=navigating 1=selecting pols 2=introducing annotation
 	private int state;
-	
 	ProgressDialog savingAnnotationDialog;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		
 		super.onCreate(savedInstanceState);
 		
+
+
+        ((MainActivity)this.getParent()).navigation=this;
+
 		instance=this;
 		setContentView(R.layout.navigation);
 
@@ -153,7 +162,7 @@ public class Navigation extends Activity{
 	protected Dialog onCreateDialog(int id){
 		if(id==0){
 			//Annotation Dialog
-			AnnotationDialog dialog = new AnnotationDialog(this,this);
+			CreateAnnotationDialog dialog = new CreateAnnotationDialog(this,this);
 			return dialog;
 		}
 		return null;
@@ -195,12 +204,30 @@ public class Navigation extends Activity{
 
 
 
-	public void sendAnnotation(Editable text, String priority) {
+	public void newAnnotation(String text, int priority) {
 		Log.d("New Annotation",text+". "+priority);
 		savingAnnotationDialog = ProgressDialog.show(Navigation.this, "", 
                 "Saving Annotation...", true);
 		
-		//TODO:Save Annotation
+		
+		Annotation na=new Annotation();
+		na.setAuthor(((MainActivity)this.getParent()).author);
+		na.setContent(text);
+		
+		na.setPriority(priority);
+		na.setDate(DateFormat.getDateInstance().format(new Date()));
+
+		na.setId(Calendar.getInstance().getTimeInMillis());
+		if(((MainActivity)this.getParent()).annotationList==null){
+			((MainActivity)this.getParent()).preAnnotations.add(na);
+		}
+		else{
+			((MainActivity)this.getParent()).annotationList.appendAnnotation(na);
+		}
+		Resources r = getResources();
+		int channelId=r.getInteger(R.id.VrpnNewAnnotation);
+		boolean val=VrpnClient.getInstance().sendPOJO(channelId,na);
+		Log.d("SendPOJO", val+"");
 		savingAnnotationDialog.hide();
 		navigation();
 

@@ -1,22 +1,18 @@
 package eu.ensam.pacho.annotations;
 
-import java.util.Date;
-
 public class Annotation {
 	
-	private String author;
-	private String content;
-	private int priority;
-	private int id;
-	private Date date;
-	public Annotation(String author, String content, int priority, int id) {
-		super();
-		this.author = author;
-		this.content = content;
-		this.priority = priority;
-		this.id = id;
-	}
+	//This fields need to be public so they can be accessed from the VrpnClient trough introspection.
+	public String author;
+	public String content;
+	public Integer priority;
+	public Long id;
+	public String date;
+
 	
+	public Annotation() {
+	}
+
 	public String getAuthor() {
 		return author;
 	}
@@ -35,12 +31,18 @@ public class Annotation {
 	public void setPriority(int priority) {
 		this.priority = priority;
 	}
-	public int getId() {
+	public long getId() {
 		return id;
 	}
-	public void setId(int id) {
+	public void setId(long id) {
 		this.id = id;
 	}
+	public void setDate(String date){
+		this.date=date;
+	}
 
+	public String getDate() {
+		return date;
+	}
 
 }

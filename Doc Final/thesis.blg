@@ -5,6 +5,12 @@ The style file: acm.bst
 Database file #1: thesis.bib
 Warning--entry type for "apple" isn't style-file defined
 --line 29 of file thesis.bib
+Repeated entry---line 172 of file thesis.bib
+ :  @inproceedings{vrpn
+ :                     ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "3DUI"
+Warning--I didn't find a database entry for "Tsang"
 Too many commas in name 1 of "Bernheim Brush A.J., Bargeron D., Gupta A., Cadiz JJ" for entry Bernheim
 while executing---line 1086 of file acm.bst
 Too many commas in name 1 of "Russell M. Taylor II, Thomas C. Hudson, Adam Seeger, Hans Weber, Jeffrey Juliano, Aron T. Helser" for entry vrpn
@@ -23,7 +29,7 @@ Too many commas in name 1 of "Russell M. Taylor II, Thomas C. Hudson, Adam Seege
 while executing---line 1127 of file acm.bst
 You've used 12 entries,
             2253 wiz_defined-function locations,
-            604 strings with 6296 characters,
+            608 strings with 6319 characters,
 and the built_in function-call counts, 4801 in all, are:
 = -- 462
 > -- 194
@@ -62,4 +68,4 @@ warning$ -- 0
 while$ -- 46
 width$ -- 14
 write$ -- 130
-(There were 8 error messages)
+(There were 9 error messages)
