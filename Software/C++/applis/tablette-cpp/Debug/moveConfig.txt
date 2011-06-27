@@ -1,0 +1,10 @@
+scene spaceship.osg
+face -1
+eyeDistance 0.065
+viewportShift 60
+startEye 0 0 0
+caveDimension 1 1.5 3
+groundDimension 3 2.2
+sceneScale 4 4 4
+lightPosition 1 1 0
+tabletIp 193.48.141.116

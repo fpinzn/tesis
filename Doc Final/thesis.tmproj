@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>thesis.tex</string>
+	<string>1-introduction.tex</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -22,21 +22,21 @@
 			<key>filename</key>
 			<string>thesis.tex</string>
 			<key>lastUsed</key>
-			<date>2011-06-27T10:51:41Z</date>
-			<key>selected</key>
-			<true/>
+			<date>2011-06-27T11:07:25Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>0-brief.tex</string>
 			<key>lastUsed</key>
-			<date>2011-06-20T11:52:52Z</date>
+			<date>2011-06-27T11:21:21Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>1-introduction.tex</string>
 			<key>lastUsed</key>
-			<date>2011-06-24T14:34:54Z</date>
+			<date>2011-06-27T11:21:21Z</date>
+			<key>selected</key>
+			<true/>
 		</dict>
 		<dict>
 			<key>filename</key>
@@ -151,7 +151,7 @@
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>19</integer>
+			<integer>0</integer>
 		</dict>
 		<key>3-design_and_specifications.tex</key>
 		<dict>
