@@ -5,12 +5,10 @@ The style file: acm.bst
 Database file #1: thesis.bib
 Warning--entry type for "apple" isn't style-file defined
 --line 29 of file thesis.bib
-Repeated entry---line 172 of file thesis.bib
+Repeated entry---line 170 of file thesis.bib
  :  @inproceedings{vrpn
  :                     ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "3DUI"
-Warning--I didn't find a database entry for "Tsang"
 Too many commas in name 1 of "Bernheim Brush A.J., Bargeron D., Gupta A., Cadiz JJ" for entry Bernheim
 while executing---line 1086 of file acm.bst
 Too many commas in name 1 of "Russell M. Taylor II, Thomas C. Hudson, Adam Seeger, Hans Weber, Jeffrey Juliano, Aron T. Helser" for entry vrpn
@@ -27,45 +25,45 @@ Too many commas in name 1 of "Russell M. Taylor II, Thomas C. Hudson, Adam Seege
 while executing---line 1127 of file acm.bst
 Too many commas in name 1 of "Russell M. Taylor II, Thomas C. Hudson, Adam Seeger, Hans Weber, Jeffrey Juliano, Aron T. Helser" for entry vrpn
 while executing---line 1127 of file acm.bst
-You've used 12 entries,
+You've used 14 entries,
             2253 wiz_defined-function locations,
-            608 strings with 6319 characters,
-and the built_in function-call counts, 4801 in all, are:
-= -- 462
-> -- 194
+            617 strings with 6711 characters,
+and the built_in function-call counts, 5581 in all, are:
+= -- 539
+> -- 228
 < -- 0
-+ -- 81
-- -- 68
-* -- 331
-:= -- 713
-add.period$ -- 35
-call.type$ -- 12
-change.case$ -- 68
++ -- 95
+- -- 80
+* -- 385
+:= -- 833
+add.period$ -- 42
+call.type$ -- 14
+change.case$ -- 79
 chr.to.int$ -- 0
-cite$ -- 12
-duplicate$ -- 229
-empty$ -- 418
-format.name$ -- 68
-if$ -- 1068
+cite$ -- 14
+duplicate$ -- 266
+empty$ -- 483
+format.name$ -- 80
+if$ -- 1240
 int.to.chr$ -- 0
-int.to.str$ -- 12
-missing$ -- 13
-newline$ -- 62
-num.names$ -- 24
-pop$ -- 95
+int.to.str$ -- 14
+missing$ -- 16
+newline$ -- 72
+num.names$ -- 28
+pop$ -- 110
 preamble$ -- 1
-purify$ -- 58
+purify$ -- 68
 quote$ -- 0
-skip$ -- 170
+skip$ -- 195
 stack$ -- 0
-substring$ -- 291
-swap$ -- 82
+substring$ -- 333
+swap$ -- 94
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 44
+type$ -- 50
 warning$ -- 0
-while$ -- 46
-width$ -- 14
-write$ -- 130
+while$ -- 53
+width$ -- 16
+write$ -- 153
 (There were 9 error messages)

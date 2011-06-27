@@ -10,19 +10,19 @@
 			<key>filename</key>
 			<string>title_page_pacho.sty</string>
 			<key>lastUsed</key>
-			<date>2011-05-10T20:22:32Z</date>
+			<date>2011-06-20T11:52:11Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>ideas.tex</string>
 			<key>lastUsed</key>
-			<date>2011-06-10T13:34:30Z</date>
+			<date>2011-06-12T13:29:29Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>thesis.tex</string>
 			<key>lastUsed</key>
-			<date>2011-06-10T14:21:37Z</date>
+			<date>2011-06-27T10:51:41Z</date>
 			<key>selected</key>
 			<true/>
 		</dict>
@@ -30,149 +30,221 @@
 			<key>filename</key>
 			<string>0-brief.tex</string>
 			<key>lastUsed</key>
-			<date>2011-06-10T13:34:31Z</date>
+			<date>2011-06-20T11:52:52Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>1-introduction.tex</string>
 			<key>lastUsed</key>
-			<date>2011-05-29T00:45:58Z</date>
+			<date>2011-06-24T14:34:54Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>2-general_description.tex</string>
 			<key>lastUsed</key>
-			<date>2011-05-23T16:19:05Z</date>
+			<date>2011-06-20T12:07:58Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>2.1-goals.tex</string>
 			<key>lastUsed</key>
-			<date>2011-05-23T16:18:58Z</date>
+			<date>2011-06-20T12:08:19Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>2.2-prior_work.tex</string>
 			<key>lastUsed</key>
-			<date>2011-06-05T13:02:13Z</date>
+			<date>2011-06-20T12:37:37Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>2.3-the_problem.tex</string>
 			<key>lastUsed</key>
-			<date>2011-06-05T13:02:12Z</date>
+			<date>2011-06-23T18:14:06Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>3-design_and_specifications.tex</string>
 			<key>lastUsed</key>
-			<date>2011-06-08T19:34:11Z</date>
+			<date>2011-06-27T09:16:46Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>3.1-the_problem_definition.tex</string>
 			<key>lastUsed</key>
-			<date>2011-05-24T11:27:27Z</date>
+			<date>2011-06-23T18:13:42Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>3.2-specifications.tex</string>
 			<key>lastUsed</key>
-			<date>2011-05-25T19:31:06Z</date>
+			<date>2011-06-22T10:58:49Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>3.3-restrictions.tex</string>
 			<key>lastUsed</key>
-			<date>2011-05-25T19:36:49Z</date>
+			<date>2011-06-20T20:30:38Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>4-design-process.tex</string>
 			<key>lastUsed</key>
-			<date>2011-05-25T19:09:30Z</date>
+			<date>2011-06-27T09:16:45Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>4.1-information-retrieval.tex</string>
 			<key>lastUsed</key>
-			<date>2011-05-30T08:36:47Z</date>
+			<date>2011-06-22T10:58:56Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>4.2-design-alternatives.tex</string>
 			<key>lastUsed</key>
-			<date>2011-06-10T13:34:11Z</date>
+			<date>2011-06-27T09:17:11Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>5-implementation.tex</string>
 			<key>lastUsed</key>
-			<date>2011-06-08T19:11:36Z</date>
+			<date>2011-06-22T10:58:54Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>5.1-implementation-review.tex</string>
 			<key>lastUsed</key>
-			<date>2011-06-10T14:21:37Z</date>
+			<date>2011-06-22T10:58:53Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>5.2-expected-results.tex</string>
 			<key>lastUsed</key>
-			<date>2011-06-05T13:02:32Z</date>
+			<date>2011-06-22T10:59:40Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
-			<string>6-validation.tex</string>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>6.1-methods.tex</string>
+			<string>6-conclusions.tex</string>
 			<key>lastUsed</key>
-			<date>2011-05-16T01:08:52Z</date>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>6.2-validation-of-results.tex</string>
-		</dict>
-		<dict>
-			<key>filename</key>
-			<string>7-conclusions.tex</string>
+			<date>2011-06-22T11:34:21Z</date>
 		</dict>
 		<dict>
 			<key>filename</key>
 			<string>thesis.bib</string>
 			<key>lastUsed</key>
-			<date>2011-06-10T13:34:29Z</date>
+			<date>2011-06-22T12:16:36Z</date>
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
 	<integer>188</integer>
 	<key>metaData</key>
 	<dict>
-		<key>5.1-implementation-review.tex</key>
+		<key>1-introduction.tex</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>432</integer>
+				<integer>646</integer>
 				<key>line</key>
-				<integer>58</integer>
+				<integer>29</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
-			<integer>109</integer>
+			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>45</integer>
+			<integer>19</integer>
 		</dict>
-		<key>thesis.tex</key>
+		<key>3-design_and_specifications.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>27</integer>
+				<key>line</key>
+				<integer>3</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>3.3-restrictions.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>307</integer>
+				<key>line</key>
+				<integer>5</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>4-design-process.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>25</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>0</integer>
+		</dict>
+		<key>4.2-design-alternatives.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>26</integer>
+				<key>line</key>
+				<integer>103</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>91</integer>
+		</dict>
+		<key>ideas.tex</key>
 		<dict>
 			<key>caret</key>
 			<dict>
 				<key>column</key>
 				<integer>0</integer>
 				<key>line</key>
-				<integer>15</integer>
+				<integer>42</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>25</integer>
+		</dict>
+		<key>thesis.bib</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>8</integer>
+				<key>line</key>
+				<integer>31</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>23</integer>
+		</dict>
+		<key>thesis.tex</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>13</integer>
+				<key>line</key>
+				<integer>5</integer>
 			</dict>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
@@ -183,11 +255,15 @@
 	<key>openDocuments</key>
 	<array>
 		<string>thesis.tex</string>
-		<string>5.1-implementation-review.tex</string>
+		<string>4-design-process.tex</string>
+		<string>3-design_and_specifications.tex</string>
+		<string>4.2-design-alternatives.tex</string>
+		<string>1-introduction.tex</string>
+		<string>thesis.bib</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{196, 0}, {1070, 774}}</string>
+	<string>{{191, 4}, {1070, 774}}</string>
 </dict>
 </plist>

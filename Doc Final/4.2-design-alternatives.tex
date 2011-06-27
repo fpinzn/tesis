@@ -14,7 +14,7 @@ The system running the application is a three-layered system, as can bee seen in
 
 The VRPN server centralizes and retransmits the information from all the interaction devices that interact with the immersive system in which are used, in this case the tablet and the passive stereo glasses. The use of VRPN was a must for the project, as shown by the Non Functional Requirements in the previous chapter. VRPN stands for \emph{Virtual Reality Peripheral Network} and is ``... a set of classes within a library and a set of servers that implement a device-independent, network-transparent interface between application programs and the set of physical devices (trackers, buttons, etc.) used in a virtual reality (VR) system'' as defined by its creators in \cite{vrpn}. The use of VRPN is a development standard at the Institute Image as well as at the COLIVRI laboratory because of the flexibility provided by an abstraction layer that separates front-end devices from the application input.
 
-The second layer is composed by the Application Servers in charge of rendering the scene to project it in the Cave. One of these application servers render the scene from the tablet point of view, and stream the scene in real time, to allow the camera metaphor that will be explained in the User Interaction section of this chapter. Is important to note, that there isn't communication between those servers; each one, renders the scene from a particular perspective calculating the adequate frustrum for it's designated screen. Each of the Application Servers renders the images for both eyes of it's screen, but each image is projected by a different projector in order to work as a passive 3D system.
+The second layer is composed by the Application Servers in charge of rendering the scene to project it in the CAVE or the Spidar. One of these application servers render the scene from the tablet point of view, and stream the scene in real time, to allow the camera metaphor that will be explained in the User Interaction section of this chapter. Is important to note, that there isn't communication between those servers; each one, renders the scene from a particular perspective calculating the adequate frustrum for it's designated screen. Each of the Application Servers renders the images for both eyes of it's screen, but each image is projected by a different projector in order to work as a passive 3D system.
 \subsection{User Interaction}
 
 \subsubsection{Front-end Devices}
@@ -39,6 +39,10 @@ In this order of ideas, the relevant basic actions are selecting objects (whethe
 \end{tabular}\\
 
 As can be seen the Tablet is the only device that can be used both as a pointer device and as a text input device. There are several ways to use the Tablet as a pointing device, the one selected in this project due to it's usability and \emph{woah factor} is the window, or blank frame, metaphor. 
+
+\begin{center}
+\includegraphics[scale=0.5]{Images/window_metaphor.jpg}
+\end{center}
 
 A first approximation to the window metaphor can be seen in the work by Jung \cite{Jung}. It consists basically of the use of a screen, its position and rotation to show the scene as if the screen frame was blank. An important difference between the work by Jung and this project is that, in his work, he doesn't take in account the relative motion of the user's head and the screen.
 
@@ -74,16 +78,34 @@ Once the system has load the model and the annotations, the user can start to re
 
 The 3D joysticks were thought to be used without capturing the user's gaze. Nevertheless, given that the scene can be seen in the tablet as well, the user can use the system as he want to; whether seeing the screen or the tablet. When the user reaches the place an annotation was made, he will notice so because a semitransparent sphere will be rendered on top of the model, he can tap the tablet screen where the sphere is shown to examine the annotation's contents. 
 
-In a different case, if the user wishes to crate a new annotation, the user can tap the screen. This will prompt the user to select the desired polygons to annotate. After the polygons are selected he will click the \emph{Annotate} button and a dialog will be shown. The dialog will contain a form to be filled with the annotation priority and it's contents. If the user confirm the annotation, tapping the button \emph{Save}, the annotation will be saved by the CAVE computers in the Annotations XML and the user will return to the navigation Tab. 
+In a different case, if the user wishes to crate a new annotation, the user can tap the screen. This will prompt the user to create a marquee to annotate. After the marquee is created he will click the \emph{Annotate} button and a dialog will be shown. The dialog will contain a form to be filled with the annotation priority and it's contents. If the user confirm the annotation, tapping the button \emph{Save}, the annotation will be saved by the CAVE computers in the Annotations XML and the user will return to the navigation Tab. 
 
 The other Tab is the Annotations Tab. Here the user can see a list of all the annotations made in the model organized by priority. In the sake of usability, a button called \emph{Create New Annotation} is shown and it's activation will prompt the user to the navigation screen with the instructions of how to make an annotation.
 
 If the user taps on any of the annotations shown, a dialog with it's details will be shown giving also the option to navigate to the annotation's location. The user can also delete the annotation or return to the Annotations List.
 \subsection{Software}
 \subsubsection{Cave}
-The code used to load and display the model and communicate to the VRPN Server is largely based on the code used by Phillipe which is based on the code developed by Sébastien Guerin. This reuse of code lead to a considerable saving of time and also helped to avoid most of the problems associated with my lack of experience using C++ and OpenScneGraph.
+The code used to load and display the model and communicate to the VRPN Server is largely based on the code used by Phillipe Crassous which is based on the code developed by Sébastien Gerin. This reuse of code lead to a considerable saving of time and also helped to avoid most of the problems associated with my lack of experience using C++ and OpenSecneGraph.
 
 The application running in all the CAVE servers is the exactly the same. The expected differences on behavior and point of view are derived from a configuration file located in the same directory as the executable application. This configuration file facility was already developed in the code authored by Sébastien.
 
-UML
 \subsubsection{Tablet}
+
+The tablet application was developed for this project from 0. It uses a VRPN library developed by Phillipe as well. The application workflow is completely coded in the Android application, and the cave software works as a state-machine receiving signals from the tablet via the VRPN centralized server. 
+
+The relevant pieces of the application are: the Image Viewer enabled to receive the streaming output via UDP, generated by an instance of the main program running specially for this purpose and the 3D joysticks featured in the navigation screen. Two of these 3D joysticks enable the user to move with 6 degrees of freedom, so he can move without constrains trough the model of interest.
+
+The Streaming Image Viewer is extends the standard Image Viewer featured by the Android API. It uses an extra thread to read the incoming images. The last incoming image is saved as the image the Image Viewer will display in the next redraw cycle as part of the interface redraw automatically performed by Android.
+
+The 3D joysticks are largely based on the Mobile-Anarchy-Widgets google code project which features a 2D joystick widget, but modified to add an extra axis to allow 3D of freedom movement on each joystick. The next page features a sort of UML diagram that briefly explains the code structure followed.
+
+
+\begin{center}
+\includegraphics[scale=0.5,angle=270]{Images/tablet_uml.pdf}
+\end{center}
+
+\subsection{Modularity}
+
+Following the need of flexibility, the application was structured in a highly modular way. The best example of this is the code for the camera/window metaphor. The code in the tablet to enable this metaphor is completely independent of the code running in the cave servers, beyond the network layer protocol used, which is simply UDP.
+
+For the metaphor to work a VRPN tracking system is needed. The nature of the tracking system is completely up to the implementer. The only information needed is the location and orientation of the tablet inside the immersive space. A calibration process between the tracker coordinates and the tracking coordinates is needed, but most of the hard work is already done. A communication from the tablet to the computer via VRPN is completely optional, but highly recommended.

@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/create_annotation_dialog"
+		>
+		
+		<TextView android:id="@+id/text"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:textColor="#FFF"
+	              android:text="Annotation:"
+	              android:textSize="15dip"
+	              
+	              android:layout_marginLeft="10px"
+	              android:layout_marginBottom="10px"
+	     />
+	
+	
+		<EditText
+			android:id="@+id/annotation_content"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:inputType="textMultiLine"
+			android:lines="5"
+			android:textSize="15dip"
+			android:width="550px"
+			android:maxLength="280"
+			android:imeOptions="actionDone"	
+			android:layout_marginLeft="10px"
+			android:layout_marginRight="10px"
+			
+		/>
+		
+		<TextView android:id="@+id/text"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textColor="#FFF"
+             android:gravity="left"
+             android:text="Priority:"
+             android:textSize="15dip"
+             
+             android:layout_marginLeft="10px"
+             
+	     />
+	     
+	    <Spinner 
+	        android:id="@+id/spinner"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:prompt="@string/priorities_prompt"
+	        android:textSize="15dip"
+			android:layout_marginLeft="10px"
+			android:layout_marginRight="10px"
+   		 />
+   		 
+   		 <Button
+			android:id="@+id/btnSendAnnotation"
+			android:text="Create"
+			 android:layout_gravity="center"
+			 android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20dip"
+			android:paddingLeft="30sp"
+			android:paddingRight="30sp"
+			android:layout_marginTop="25px"
+			
+		/>	
+	     
+	    
+	     
+</LinearLayout>

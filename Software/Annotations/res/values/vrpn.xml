@@ -8,14 +8,14 @@ Keep them in a single file for easy reference and matching with your C++ code
  
 <resources>
 <!-- VRPN Client -->
-<item type="string" format="string" name="VrpnServer">192.168.2.2</item>
+<item type="string" format="string" name="VrpnServer">193.48.141.126</item>
 <item type="integer" format="integer" name="VrpnServerPort">8888</item>
 
 <!-- Navigation Screen  -->
 <item type="id" format="integer" name="VrpnTapScreen" >297</item>
 <item type="id" format="integer" name="VrpnRotationJoystick" >298</item>
 <item type="id" format="integer" name="VrpnDirectionJoystick" >299</item>
-
+<item type="id" format="integer" name="VrpnCancelSelectPolygons" >396</item>
 <!-- Annotation Screen -->
 <item type="id" format="integer" name="VrpnGoToAnnotation" >399</item>
 <item type="id" format="integer" name="VrpnRemoveAnnotation" >398</item>

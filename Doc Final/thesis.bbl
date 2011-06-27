@@ -10,6 +10,11 @@
 \newblock In {\em Proceedings of the SIG-CHI Conference on Human Factors in
   Computing Systems\/} (2001), pp.~285--292.
 
+\bibitem{3DUI}
+{\sc Bowman, D.}
+\newblock {\em 3D user interfaces: theory and practice}.
+\newblock Pearson Education. Addison-Wesley, 2005.
+
 \bibitem{Burton}
 {\sc Burton~N, Kilgour A~C, T.~H.}
 \newblock A case study in the use of vrml 2.0 for marketing a product.
@@ -74,5 +79,13 @@
 \newblock Integrating expanding annotations with a 3d explosion probe.
 \newblock In {\em Proceedings of the working conference on Advanced visual
   interfaces\/} (New York, NY, USA, 2004), AVI '04, ACM, pp.~63--70.
+
+\bibitem{Tsang}
+{\sc Tsang, M., Fitzmaurice, G.~W., Kurtenbach, G., Khan, A., and Buxton, B.}
+\newblock Boom chameleon: simultaneous capture of 3d viewpoint, voice and
+  gesture annotations on a spatially-aware display.
+\newblock In {\em Proceedings of the 15th annual ACM symposium on User
+  interface software and technology\/} (New York, NY, USA, 2002), UIST '02,
+  ACM, pp.~111--120.
 
 \end{thebibliography}

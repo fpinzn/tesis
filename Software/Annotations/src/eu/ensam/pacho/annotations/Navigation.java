@@ -145,6 +145,10 @@ public class Navigation extends Activity{
 			
 			else if(id==R.id.btncancel){
 				navigation();
+				Resources r = getResources();
+				int channelId=r.getInteger(R.id.VrpnCancelSelectPolygons);
+				VrpnClient.getInstance().send2DData(channelId,1,0);
+			
 			}
 		}
 		
@@ -217,7 +221,7 @@ public class Navigation extends Activity{
 		na.setPriority(priority);
 		na.setDate(DateFormat.getDateInstance().format(new Date()));
 
-		na.setId(Calendar.getInstance().getTimeInMillis());
+		na.setId((int)(Calendar.getInstance().getTimeInMillis()));
 		if(((MainActivity)this.getParent()).annotationList==null){
 			((MainActivity)this.getParent()).preAnnotations.add(na);
 		}

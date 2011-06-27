@@ -6,7 +6,7 @@ public class Annotation {
 	public String author;
 	public String content;
 	public Integer priority;
-	public Long id;
+	public Integer annotation_id;
 	public String date;
 
 	
@@ -31,11 +31,11 @@ public class Annotation {
 	public void setPriority(int priority) {
 		this.priority = priority;
 	}
-	public long getId() {
-		return id;
+	public int getId() {
+		return annotation_id;
 	}
-	public void setId(long id) {
-		this.id = id;
+	public void setId(int id) {
+		this.annotation_id = id;
 	}
 	public void setDate(String date){
 		this.date=date;

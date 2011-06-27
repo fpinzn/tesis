@@ -1,0 +1,288 @@
+<?xml version="1.0"?>
+<annotations model="test.osg">
+	<annotation author="Author 1" date="2010/01/03" priority="1"  id="6">
+		<contents>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+		</contents>
+		<polygons>
+			<polygon id="34"/>
+			<polygon id="35"/>
+			<polygon id="36"/>
+			<polygon id="37"/>
+		</polygons>
+		<pov>
+			<x value="30"/>
+			<y value="30"/>
+			<z value="30"/>
+			<xAngle value="30"/>
+			<yAngle value="30"/>
+			<zAngle value="30"/>
+		</pov>
+	</annotation>
+	<annotation author="Author 2" date="2012/11/23" priority="3" id="7">
+		<contents>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+		</contents>
+		<polygons>
+			<polygon id="340"/>
+			<polygon id="350"/>
+			<polygon id="360"/>
+			<polygon id="370"/>
+		</polygons>
+		<pov>
+			<x value="304"/>
+			<y value="304"/>
+			<z value="304"/>
+			<xAngle value="303"/>
+			<yAngle value="303"/>
+			<zAngle value="303"/>
+		</pov>
+	</annotation>
+	<annotation author="Author 3" date="2011/01/03" priority="2" id="8">
+		<contents>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+		</contents>
+		<polygons>
+			<polygon id="34"/>
+			<polygon id="35"/>
+			<polygon id="36"/>
+			<polygon id="37"/>
+		</polygons>
+		<pov>
+			<x value="30"/>
+			<y value="30"/>
+			<z value="30"/>
+			<xAngle value="30"/>
+			<yAngle value="30"/>
+			<zAngle value="30"/>
+		</pov>
+	</annotation>
+	<annotation author="Author 4" date="2014/01/03" priority="1" id="9">
+		<contents>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+		</contents>
+		<polygons>
+			<polygon id="34"/>
+			<polygon id="35"/>
+			<polygon id="36"/>
+			<polygon id="37"/>
+		</polygons>
+		<pov>
+			<x value="30"/>
+			<y value="30"/>
+			<z value="30"/>
+			<xAngle value="30"/>
+			<yAngle value="30"/>
+			<zAngle value="30"/>
+		</pov>
+	</annotation>
+	<annotation author="Author 5" date="2001/02/03" priority="3" id="10">
+		<contents>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+		</contents>
+		<polygons>
+			<polygon id="34"/>
+			<polygon id="35"/>
+			<polygon id="36"/>
+			<polygon id="37"/>
+		</polygons>
+		<pov>
+			<x value="30"/>
+			<y value="30"/>
+			<z value="30"/>
+			<xAngle value="30"/>
+			<yAngle value="30"/>
+			<zAngle value="30"/>
+		</pov>
+	</annotation>
+	<annotation author="Author 6" date="2010/11/03" priority="1" id="11">
+		<contents>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+		</contents>
+		<polygons>
+			<polygon id="34"/>
+			<polygon id="35"/>
+			<polygon id="36"/>
+			<polygon id="37"/>
+		</polygons>
+		<pov>
+			<x value="30"/>
+			<y value="30"/>
+			<z value="30"/>
+			<xAngle value="30"/>
+			<yAngle value="30"/>
+			<zAngle value="30"/>
+		</pov>
+	</annotation>
+	<annotation author="Author 1" date="2010/10/03" priority="2" id="12">
+		<contents>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+		</contents>
+		<polygons>
+			<polygon id="34"/>
+			<polygon id="35"/>
+			<polygon id="36"/>
+			<polygon id="37"/>
+		</polygons>
+		<pov>
+			<x value="30"/>
+			<y value="30"/>
+			<z value="30"/>
+			<xAngle value="30"/>
+			<yAngle value="30"/>
+			<zAngle value="30"/>
+		</pov>
+	</annotation>
+	<annotation author="Author 3" date="2011/12/03" priority="2" id="13">
+		<contents>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+		</contents>
+		<polygons>
+			<polygon id="34"/>
+			<polygon id="35"/>
+			<polygon id="36"/>
+			<polygon id="37"/>
+		</polygons>
+		<pov>
+			<x value="30"/>
+			<y value="30"/>
+			<z value="30"/>
+			<xAngle value="30"/>
+			<yAngle value="30"/>
+			<zAngle value="30"/>
+		</pov>
+	</annotation>
+	<annotation author="Author 4" date="2013/01/13" priority="3" id="14">
+		<contents>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+		</contents>
+		<polygons>
+			<polygon id="34"/>
+			<polygon id="35"/>
+			<polygon id="36"/>
+			<polygon id="37"/>
+		</polygons>
+		<pov>
+			<x value="30"/>
+			<y value="30"/>
+			<z value="30"/>
+			<xAngle value="30"/>
+			<yAngle value="30"/>
+			<zAngle value="30"/>
+		</pov>
+	</annotation>
+	<annotation author="Author 11" date="2010/01/13" priority="2" id="15">
+		<contents>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+		</contents>
+		<polygons>
+			<polygon id="34"/>
+			<polygon id="35"/>
+			<polygon id="36"/>
+			<polygon id="37"/>
+		</polygons>
+		<pov>
+			<x value="30"/>
+			<y value="30"/>
+			<z value="30"/>
+			<xAngle value="30"/>
+			<yAngle value="30"/>
+			<zAngle value="30"/>
+		</pov>
+	</annotation>
+	<annotation author="Author 12" date="2010/12/03" priority="2" id="16">
+		<contents>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+		</contents>
+		<polygons>
+			<polygon id="34"/>
+			<polygon id="35"/>
+			<polygon id="36"/>
+			<polygon id="37"/>
+		</polygons>
+		<pov>
+			<x value="30"/>
+			<y value="30"/>
+			<z value="30"/>
+			<xAngle value="30"/>
+			<yAngle value="30"/>
+			<zAngle value="30"/>
+		</pov>
+	</annotation>
+	<annotation author="Author 13" date="2010/12/03" priority="2" id="17">
+		<contents>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+		</contents>
+		<polygons>
+			<polygon id="34"/>
+			<polygon id="35"/>
+			<polygon id="36"/>
+			<polygon id="37"/>
+		</polygons>
+		<pov>
+			<x value="30"/>
+			<y value="30"/>
+			<z value="30"/>
+			<xAngle value="30"/>
+			<yAngle value="30"/>
+			<zAngle value="30"/>
+		</pov>
+	</annotation>
+	<annotation author="Author 14" date="2010/12/03" priority="3" id="18">
+		<contents>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+		</contents>
+		<polygons>
+			<polygon id="34"/>
+			<polygon id="35"/>
+			<polygon id="36"/>
+			<polygon id="37"/>
+		</polygons>
+		<pov>
+			<x value="30"/>
+			<y value="30"/>
+			<z value="30"/>
+			<xAngle value="30"/>
+			<yAngle value="30"/>
+			<zAngle value="30"/>
+		</pov>
+	</annotation>
+	<annotation author="Author 5" date="2012/01/03" priority="3" id="19">
+		<contents>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+		</contents>
+		<polygons>
+			<polygon id="34"/>
+			<polygon id="35"/>
+			<polygon id="36"/>
+			<polygon id="37"/>
+		</polygons>
+		<pov>
+			<x value="30"/>
+			<y value="30"/>
+			<z value="30"/>
+			<xAngle value="30"/>
+			<yAngle value="30"/>
+			<zAngle value="30"/>
+		</pov>
+	</annotation>
+	<annotation author="Author 6" date="2010/01/13" priority="2" id="20">
+		<contents>
+			Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum".
+		</contents>
+		<polygons>
+			<polygon id="34"/>
+			<polygon id="35"/>
+			<polygon id="36"/>
+			<polygon id="37"/>
+		</polygons>
+		<pov>
+			<x value="30"/>
+			<y value="30"/>
+			<z value="30"/>
+			<xAngle value="30"/>
+			<yAngle value="30"/>
+			<zAngle value="30"/>
+		</pov>
+	</annotation>
+</annotations>

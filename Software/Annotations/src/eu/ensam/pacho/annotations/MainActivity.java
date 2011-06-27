@@ -80,7 +80,6 @@ public class MainActivity extends TabActivity {
     	 * By default, the sensor listeners remain active, event after the activity is 
     	 * stopped --> stop the sensor listener
     	 */
-    	VrpnClient.getInstance().enableTiltTracker(false);
     }
 
     public void setTab(int tabCode,int command){

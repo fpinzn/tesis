@@ -1,3 +1,22 @@
 %5.2	Resultados esperados 
 %Describir y justificar las formas de implementar modelos y soluciones, así como las herramientas empleadas. Evaluar la precisión del desempeño esperado considerando el efecto de soluciones aproximadas y errores de medición esperados.
 \section{Expected Results}
+The expected results consisted of an application capable of solving the problem largely described in previous sections. But to summarize and follow the document format the summarized requirements of the application were:
+
+\begin{enumerate}
+	\item Navigate a 3D model with 6D of freedom.
+	\item Allow a non intrusive and cognitively ergonomic navigation method.
+	\item Stream rendered scene to the tablet taking into consideration its position.
+	\item Select a relevant part of the model to associate the annotation to.
+	\item Introduce textual information such as author, contents and priority.
+	\item Use VRPN as the protocol between devices in runtime.
+	\item Feature a flexible solution that may run in other environments with minor tweaks.
+	\item Save and load the progress as an XML file that may be synchronized by a third party application.
+	\item Run in a standard Windows XP machine with mouse and keyboard.
+\end{enumerate}
+
+It is relevant to comment that these requirements don't have anything to do with the Functional or Non-Functional requirements featured previously. These are summarized requirements that were considered as part of the development of the project, and were deduced trough the iterations of the process.
+
+All the requirements mentioned above were met, with the notable exception of the last one: \emph{Run in a standard Windows XP machine with mouse and keyboard}. The reason behind this is that, as noted in the list of Non-Functional Requirements the development of this part of the project  implied a whole new branch in the software development.
+
+The solution presented is then, as specified in the Acceptance Levels, an optimal solution and as such it was accepted by the project supervisors. 

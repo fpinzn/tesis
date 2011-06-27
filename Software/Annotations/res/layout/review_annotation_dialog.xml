@@ -1,0 +1,84 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+		android:orientation="vertical" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:id="@+id/review_annotation_dialog"
+		>
+		
+		<TextView android:id="@+id/annotation_author"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:textColor="#FFF"
+	              android:textSize="25dip"
+	              android:width="400px"
+	              android:layout_marginLeft="10px"
+	              android:layout_marginBottom="10px"
+	     />
+	     
+	    <TextView android:id="@+id/annotation_date"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:textColor="#FFF"
+	              android:textSize="15dip"
+	              android:layout_toRightOf="@id/annotation_author"
+	              android:layout_marginLeft="10px"
+	              android:layout_marginBottom="10px"
+	     />
+	     		
+	    <TextView android:id="@+id/annotation_priority"
+	              android:layout_width="wrap_content"
+	              android:layout_height="wrap_content"
+	              android:textColor="#FFF"
+	              android:textSize="15dip"
+	              android:layout_below="@id/annotation_author"
+	              android:layout_marginLeft="10px"
+	              android:layout_marginBottom="10px"/>
+	
+	
+		<TextView
+			android:id="@+id/annotation_content"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:inputType="textMultiLine"
+			android:textSize="12dip"
+			android:width="550px"
+			android:layout_marginLeft="10px"
+			android:layout_marginRight="10px"
+			android:layout_below="@id/annotation_priority"
+			
+			
+		/>
+
+	 <LinearLayout android:layout_width="wrap_content"
+		android:layout_height="wrap_content" 
+		android:layout_gravity="center"
+		android:layout_below="@id/annotation_content"
+		android:orientation="horizontal"
+			android:layout_marginTop="25px"
+			android:layout_centerInParent="true"	>
+		
+	
+   		 
+   		 <Button
+			android:id="@+id/btnDelete"
+			android:text="Delete"
+			 android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20dip"
+			android:paddingLeft="30sp"
+			android:paddingRight="30sp"
+		/>	
+		  <Button
+			android:id="@+id/btnGotoLocation"
+			android:text="Go to Location"
+			android:layout_gravity="center"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:textSize="20dip"
+			android:paddingLeft="30sp"
+			android:paddingRight="30sp"
+		
+			
+		/>	
+	</LinearLayout>
+	     
+</RelativeLayout>
